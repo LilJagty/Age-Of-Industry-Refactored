@@ -1,0 +1,249 @@
+{
+	id: "76B1B65471E94E86"
+	group: "43F7087BBC4FCDBB"
+	order_index: 1
+	filename: "storage"
+	title: "Storage"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -1.5d
+			y: -1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/block/shulker_box.png"
+			hover: ["Personal Storage"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/block/bookshelf.png"
+			hover: ["Stationary Storage"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: -1.5d
+			y: 2.0d
+			subtitle: "Beat a raid to get a small pack."
+			id: "09E79EA7E7B0EA66"
+			tasks: [{
+				id: "411B8C50C8373D59"
+				type: "item"
+				item: {
+					id: "quark:backpack"
+					Count: 1b
+					tag: {
+						Inventory: [
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+							{ }
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1EDFC4AF9A739DD6"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			subtitle: "Poor man's shulker box."
+			description: ["Don't let it get blown up. It may not drop anything"]
+			id: "2F3CCB4385FEF889"
+			tasks: [{
+				id: "496B9C1EA30B0809"
+				type: "item"
+				item: "immersiveengineering:crate"
+			}]
+			rewards: [{
+				id: "2D065974EAE55401"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Drawers"
+			x: 1.5d
+			y: 1.0d
+			subtitle: "Bulk storage and auto-sorting"
+			id: "5A9B690CF01BECC2"
+			tasks: [
+				{
+					id: "7427E9F964677D59"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+				{
+					id: "1768AAD0867115CE"
+					type: "item"
+					item: "storagedrawers:compacting_drawers_3"
+				}
+				{
+					id: "3EC948589D09FE0A"
+					type: "item"
+					title: "Any #storagedrawers:drawers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "storagedrawers:drawers"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5C1DD9AD66BEE0EF"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Easy Create component management"
+			x: -1.5d
+			y: 0.0d
+			subtitle: "Check out the handy hotkeys."
+			id: "7CCA6AE8A19C9B7E"
+			tasks: [{
+				id: "3C03891855E16B15"
+				type: "item"
+				item: "create:brown_toolbox"
+			}]
+			rewards: [{
+				id: "4148AA276EF100B8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "The Vault"
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Vaults can store large amounts of items, but they cannot be interacted with by hand. "
+			description: ["You have to insert and retrieve items via hoppers, funnels, chutes, etc."]
+			id: "129F5CE91D2EB9F7"
+			tasks: [{
+				id: "68F7AE539D04DB87"
+				type: "item"
+				item: "create:item_vault"
+			}]
+			rewards: [{
+				id: "4608E5BF0B8E24CD"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Pack Puppy"
+			x: -1.5d
+			y: 3.0d
+			subtitle: "To get dogs with perks, right-click tamed Wolves with Training Treats. Then, choose their perks by right-clicking them with a Stick."
+			description: ["There are lots of helpful perks, but Pack Puppy allows them to carry and pick up items for you. Special backpack!"]
+			id: "71C39055087E7E00"
+			tasks: [
+				{
+					id: "5B4348A4F0A5B24C"
+					type: "item"
+					item: "minecraft:bone"
+					count: 10L
+				}
+				{
+					id: "69189B1795A49AAE"
+					type: "item"
+					item: "doggytalents:training_treat"
+				}
+				{
+					id: "7C501DB8120FD7FB"
+					type: "item"
+					item: "minecraft:stick"
+				}
+			]
+			rewards: [
+				{
+					id: "55F532EB93BE0135"
+					type: "item"
+					item: "doggytalents:food_bowl"
+				}
+				{
+					id: "0A70DD1B536D8EB4"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			subtitle: "Check out Refined Storage in Age 3."
+			id: "47D10D8A418207C7"
+			tasks: [{
+				id: "3F5B9FB950CFB0C1"
+				type: "checkmark"
+				title: "Item Database"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			subtitle: "Charge it to increase its capacity."
+			id: "33DAC33B29D982D6"
+			tasks: [{
+				id: "7B57279F52FC46ED"
+				type: "item"
+				item: {
+					id: "industrialforegoing:infinity_backpack"
+					Count: 1b
+					tag: {
+						CanCharge: 1b
+						Special: 0b
+						Selected: "POOR"
+						Energy: 0L
+					}
+				}
+			}]
+			rewards: [{
+				id: "7B0A4D9BE69C1444"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

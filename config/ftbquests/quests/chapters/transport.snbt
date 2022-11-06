@@ -1,0 +1,296 @@
+{
+	id: "6D2EF17D14F54763"
+	group: "43F7087BBC4FCDBB"
+	order_index: 2
+	filename: "transport"
+	title: "Transport"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -1.5d
+			y: -1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/item/chest_minecart.png"
+			hover: ["Item Transport"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/item/diamond_horse_armor.png"
+			hover: ["Personal Transport"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Simple Routing"
+			x: -1.5d
+			y: 0.0d
+			id: "1741973EEF8102FA"
+			tasks: [
+				{
+					id: "7AAAFBCB7F4F42E0"
+					type: "item"
+					item: "create:belt_connector"
+				}
+				{
+					id: "43725321D9FC3B53"
+					type: "item"
+					item: "quark:pipe"
+				}
+			]
+			rewards: [{
+				id: "6EF7AE00281FB303"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Little Logistics"
+			x: -1.5d
+			y: 1.0d
+			description: ["You can build barges, little trains, and even Create boat contraptions with Little Logistics and Little Contraptions! They're so cute, and useful."]
+			id: "5750745E06EAFCEA"
+			tasks: [
+				{
+					id: "57FD1F0D6A7DD8F9"
+					type: "item"
+					item: "littlelogistics:barge"
+				}
+				{
+					id: "61141D4DF3FB09DA"
+					type: "item"
+					item: "littlelogistics:chest_car"
+				}
+			]
+			rewards: [{
+				id: "7DB8468968628160"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "No Elytra Gang"
+			x: 1.5d
+			y: 0.0d
+			id: "4324B5145E0B8D2A"
+			tasks: [
+				{
+					id: "569AEA18E426EBFC"
+					type: "item"
+					item: "farmersdelight:horse_feed"
+				}
+				{
+					id: "02189392DFAFFC7C"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+			]
+			rewards: [{
+				id: "5FA64A0426F69B36"
+				type: "item"
+				item: "minecraft:horse_spawn_egg"
+			}]
+		}
+		{
+			title: "Run A Train On Them"
+			x: -1.5d
+			y: 2.0d
+			subtitle: "These trains are fast, logistically powerful, and visually awesome."
+			description: ["These trains can also run outside of loaded chunks."]
+			id: "03CC3D9507042466"
+			tasks: [
+				{
+					id: "19BD5C4152CA60FC"
+					type: "item"
+					item: "create:track"
+				}
+				{
+					id: "6343E1A975CC6BEB"
+					type: "item"
+					item: "create:track_station"
+				}
+				{
+					id: "4EAB08D541447839"
+					type: "item"
+					item: "create:controls"
+				}
+				{
+					id: "5C211E11E8C4A52A"
+					type: "item"
+					item: "create:railway_casing"
+				}
+			]
+			rewards: [{
+				id: "517A856BDF7F06EA"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "I Am Speed"
+			x: 1.5d
+			y: 1.0d
+			id: "690B78E6B3DF3540"
+			tasks: [{
+				id: "4448167F4D29696A"
+				type: "item"
+				item: "botania:travel_belt"
+			}]
+			rewards: [{
+				id: "555E35922D1F0969"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Exploring the Nether Regions"
+			x: 1.5d
+			y: 2.0d
+			description: ["Remember traveling 1 block in the nether = 8 blocks in the overworld."]
+			id: "1786C4C626DB8E5D"
+			tasks: [
+				{
+					id: "2B1F23196BAE0DDD"
+					type: "item"
+					item: {
+						id: "minecraft:warped_fungus_on_a_stick"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5D4F3F82A070EE0A"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+			]
+			rewards: [{
+				id: "03B07A7ABF5D2F77"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+			}]
+		}
+		{
+			title: "Short-Range Instant Teleportation"
+			x: 1.5d
+			y: 3.0d
+			id: "7F862B27DED55010"
+			tasks: [
+				{
+					id: "74FC8BE0F0B02921"
+					type: "item"
+					item: "travel_anchors:travel_staff"
+				}
+				{
+					id: "56DFBDC3679F898F"
+					type: "item"
+					item: "travel_anchors:travel_anchor"
+				}
+			]
+			rewards: [{
+				id: "7283720CEA222022"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+		}
+		{
+			title: "Tearing the Dimensional Fabric"
+			x: 1.5d
+			y: 4.0d
+			id: "65EE6441BBECBBB9"
+			tasks: [{
+				id: "614794E0B9E0BF06"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "27CD24522D6510A2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Wormhole Tech"
+			x: -1.5d
+			y: 3.0d
+			subtitle: "You can color-code these with dyes."
+			id: "6E9CAD03EFD1A3AE"
+			tasks: [
+				{
+					id: "095EB37CEE0D608D"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "1357A3834FF79D27"
+					type: "item"
+					item: "enderstorage:ender_tank"
+				}
+			]
+			rewards: [{
+				id: "15952EB01FDB7F79"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Configurable Logistics"
+			x: -1.5d
+			y: 4.0d
+			id: "7A0C7D694FDBF1F7"
+			tasks: [
+				{
+					id: "36139AABD5579429"
+					type: "item"
+					item: "mekanism:basic_logistical_transporter"
+				}
+				{
+					id: "12BBD6658E4C0396"
+					type: "item"
+					item: "mekanism:configurator"
+				}
+			]
+			rewards: [{
+				id: "6D954826C7338F1D"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Move Any Mob"
+			x: 1.5d
+			y: 5.0d
+			id: "5448F0DFFC792302"
+			tasks: [{
+				id: "0E0F700295A3A0AA"
+				type: "item"
+				item: "industrialforegoing:mob_imprisonment_tool"
+			}]
+			rewards: [{
+				id: "315595491471B542"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

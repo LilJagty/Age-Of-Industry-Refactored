@@ -1,0 +1,341 @@
+{
+	id: "476396A5C000B855"
+	group: "018A902D5AD82D1D"
+	order_index: 0
+	filename: "fine_dining"
+	title: "Fine Dining"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Super Bowl Party"
+			x: -2.5d
+			y: -1.5d
+			description: ["Celebrate!"]
+			id: "0973DC116089A9E3"
+			tasks: [
+				{
+					id: "72B41AD665CEC788"
+					type: "item"
+					item: "corn_delight:popcorn_box"
+				}
+				{
+					id: "52FC8F381181966F"
+					type: "item"
+					item: "farmersdelight:chocolate_pie"
+				}
+				{
+					id: "6025022907BAB49E"
+					type: "item"
+					item: "farmersdelight:barbecue_stick"
+				}
+				{
+					id: "7E70E846CD969324"
+					type: "item"
+					item: "corn_delight:corn_dog"
+				}
+				{
+					id: "3EF3A5177944B4EB"
+					type: "item"
+					item: "neapolitan:neapolitan_ice_cream"
+				}
+				{
+					id: "53FA09333792813C"
+					type: "item"
+					item: "corn_delight:nachos_block"
+				}
+			]
+			rewards: [{
+				id: "369A32FC8523C6BC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Husbandry"
+			x: 2.5d
+			y: 1.5d
+			id: "440BD52162A1D855"
+			tasks: [
+				{
+					id: "5A165973703D6948"
+					type: "item"
+					item: "minecraft:wheat"
+				}
+				{
+					id: "233BB16FB0E855AD"
+					type: "item"
+					item: "minecraft:beetroot"
+				}
+				{
+					id: "477C1119953C1330"
+					type: "item"
+					item: "minecraft:carrot"
+				}
+				{
+					id: "788061005FD2D5BD"
+					type: "item"
+					item: "minecraft:potato"
+				}
+				{
+					id: "424B3EEFF7A1D35A"
+					type: "item"
+					item: "minecraft:pumpkin"
+				}
+				{
+					id: "4ECDF83F5CD40758"
+					type: "item"
+					item: "minecraft:melon_slice"
+				}
+				{
+					id: "6F15198814DC8EDC"
+					type: "item"
+					item: "farmersdelight:cabbage"
+				}
+				{
+					id: "346765969A76D5B8"
+					type: "item"
+					item: "farmersdelight:tomato"
+				}
+				{
+					id: "077BC5C5C6E8802F"
+					type: "item"
+					item: "farmersdelight:onion"
+				}
+				{
+					id: "41AC6CA65FA10B74"
+					type: "item"
+					item: "farmersdelight:rice"
+				}
+				{
+					id: "575A934000ABA663"
+					type: "item"
+					item: "corn_delight:corn"
+				}
+				{
+					id: "0F467C4276535741"
+					type: "item"
+					item: "minecraft:sweet_berries"
+				}
+				{
+					id: "0F2329ACDD9FBE9B"
+					type: "item"
+					item: "minecraft:glow_berries"
+				}
+			]
+			rewards: [{
+				id: "60FCBCE077EC8FF1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Masterbaking"
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"440BD52162A1D855"
+				"54BA754F3E7E6C98"
+				"67819BDAE0802304"
+				"0973DC116089A9E3"
+				"54AD3191FFE77053"
+				"6142670A1DF349D2"
+			]
+			id: "458EA2921D1B9F8F"
+			tasks: [{
+				id: "1AE2746C597C7A46"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+			rewards: [{
+				id: "198E49BE09B0EC0B"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			title: "Meatlovers"
+			x: 2.5d
+			y: -1.5d
+			subtitle: "Don't choke on the meat"
+			id: "54BA754F3E7E6C98"
+			tasks: [
+				{
+					id: "36529EA60B516D50"
+					type: "item"
+					item: "minecraft:porkchop"
+				}
+				{
+					id: "1FB8332F5EBA632F"
+					type: "item"
+					item: "minecraft:beef"
+				}
+				{
+					id: "2B209FB70F601646"
+					type: "item"
+					item: "minecraft:chicken"
+				}
+				{
+					id: "3BD2EE27F9D85BCD"
+					type: "item"
+					item: "minecraft:rabbit"
+				}
+				{
+					id: "3845AB0677EB9107"
+					type: "item"
+					item: "minecraft:mutton"
+				}
+				{
+					id: "316C6C855CD43E7A"
+					type: "item"
+					item: "quark:crab_leg"
+				}
+				{
+					id: "539F61F6353E1730"
+					type: "item"
+					item: "quark:frog_leg"
+				}
+				{
+					id: "3CD83ACE2B904F88"
+					type: "item"
+					item: "minecraft:cod"
+				}
+				{
+					id: "6B923BBE57B52810"
+					type: "item"
+					item: "minecraft:salmon"
+				}
+			]
+			rewards: [{
+				id: "2A6331C267FA1539"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Tastes Like Chicken"
+			x: -2.5d
+			y: 1.5d
+			subtitle: "Source: just trust me bro"
+			id: "67819BDAE0802304"
+			tasks: [
+				{
+					id: "5DFE53B669FA0CA7"
+					type: "item"
+					item: "botania:mana_cookie"
+				}
+				{
+					id: "2543DE042D5F112C"
+					type: "item"
+					item: "nethersdelight:stuffed_hoglin"
+				}
+				{
+					id: "632186398DD64E51"
+					type: "item"
+					item: "nethersdelight:magma_gelatin"
+				}
+				{
+					id: "767D231F66F840F5"
+					type: "item"
+					item: "nethersdelight:strider_moss_stew"
+				}
+				{
+					id: "0F544AB3E8D86D63"
+					type: "item"
+					item: "farmersdelight:squid_ink_pasta"
+				}
+				{
+					id: "6DEC25C71C61DD2C"
+					type: "item"
+					item: "neapolitan:chocolate_spider_eye"
+				}
+				{
+					id: "4FFADBCA22CA8126"
+					type: "item"
+					item: "largemeals:pufferfish_broth"
+				}
+			]
+			rewards: [{
+				id: "0BC0AB781C536672"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Sweet and Sticky"
+			x: 0.0d
+			y: -2.5d
+			id: "54AD3191FFE77053"
+			tasks: [
+				{
+					id: "154B67890F3BD2A7"
+					type: "item"
+					item: "farmersdelight:honey_glazed_ham_block"
+				}
+				{
+					id: "2984FC5AE3EB6067"
+					type: "item"
+					item: "createaddition:honey_cake"
+				}
+				{
+					id: "7B8A2162B9980E72"
+					type: "item"
+					item: "neapolitan:banana_milkshake"
+				}
+				{
+					id: "7640091680ED8644"
+					type: "item"
+					item: "create:chocolate_glazed_berries"
+				}
+				{
+					id: "7B061840D0F38351"
+					type: "item"
+					item: "create:sweet_roll"
+				}
+			]
+			rewards: [{
+				id: "2B696103990703C9"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Bottoms Up"
+			x: 0.0d
+			y: 2.5d
+			id: "6142670A1DF349D2"
+			tasks: [
+				{
+					id: "13E08C79D2FDEBD0"
+					type: "item"
+					item: "corn_delight:creamy_corn_drink"
+				}
+				{
+					id: "35BBDD99A24B85C3"
+					type: "item"
+					item: "farmersdelight:hot_cocoa"
+				}
+				{
+					id: "495ABF991F120C4D"
+					type: "item"
+					item: "neapolitan:strawberry_banana_smoothie"
+				}
+				{
+					id: "658D64444A1743F1"
+					type: "item"
+					item: "neapolitan:mint_milkshake"
+				}
+				{
+					id: "02307583AA7654E8"
+					type: "item"
+					item: "create:builders_tea"
+				}
+			]
+			rewards: [{
+				id: "2BCF1022D2BEA2EA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

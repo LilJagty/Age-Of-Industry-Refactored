@@ -1,0 +1,697 @@
+{
+	id: "758203A23A5DFE37"
+	group: "43F7087BBC4FCDBB"
+	order_index: 0
+	filename: "mining"
+	title: "Tools"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -5.0d
+			y: -4.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/block/grass_block_side.png"
+			hover: ["Building"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/item/diamond_pickaxe.png"
+			hover: ["Mining"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/item/diamond_sword.png"
+			hover: ["Combat"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/item/diamond_hoe.png"
+			hover: ["Farming"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/item/nether_star.png"
+			hover: ["Magic"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Place lots of blocks"
+			x: -5.0d
+			y: -3.0d
+			id: "6CB348DA1EEBAEE7"
+			tasks: [{
+				id: "13848B26BC3CE7E7"
+				type: "item"
+				item: {
+					id: "constructionwand:iron_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4D3238A6DEB7B16F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			subtitle: "Use the workbench and your hammer to create a Tetra tool to help you mine."
+			id: "1354DEC5D49681C9"
+			tasks: [{
+				id: "2E8E34F985651460"
+				type: "checkmark"
+				title: "Make a Tetra tool"
+			}]
+			rewards: [{
+				id: "0296CD66FEB7AFD6"
+				type: "xp"
+				xp: 1
+			}]
+		}
+		{
+			title: "Automatically break blocks"
+			x: -2.5d
+			y: -2.0d
+			id: "2D212F761C2FC228"
+			tasks: [{
+				id: "4A38896C34BE3855"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+			rewards: [{
+				id: "337F800083819002"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			id: "32FDD2A12EB22FD2"
+			tasks: [{
+				id: "19DE8C25261D2E31"
+				type: "checkmark"
+				title: "Hoes harvest crops on right click 3x3"
+			}]
+			rewards: [{
+				id: "5723D63DE4C7F034"
+				type: "xp"
+				xp: 1
+			}]
+		}
+		{
+			title: "Automatically harvest crops"
+			x: 2.5d
+			y: -2.0d
+			id: "61A24484168EB6B1"
+			tasks: [{
+				id: "20E8429671393225"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+			rewards: [{
+				id: "3AA720237FCBD4F6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Replace blocks instantly"
+			x: -5.0d
+			y: 1.0d
+			id: "55367E85A963614D"
+			tasks: [{
+				id: "5A52DA784E7817B6"
+				type: "item"
+				item: "botania:exchange_rod"
+			}]
+			rewards: [{
+				id: "76DE5EB1C5166B63"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Place blocks in patterns"
+			x: -5.0d
+			y: -1.0d
+			id: "0C0DCB720B55737B"
+			tasks: [{
+				id: "40C9D0BE27892450"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+			rewards: [{
+				id: "3EA75504772FEF01"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Break lots of blocks"
+			x: -2.5d
+			y: 0.0d
+			id: "4DAA438789C47B47"
+			tasks: [{
+				id: "021D8DA16B5EE33A"
+				type: "item"
+				item: {
+					id: "botania:terra_pick"
+					Count: 1b
+					tag: {
+						mana: 9999
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "63E8F009DE7F9DBB"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Break 3x3s of blocks"
+			x: -2.5d
+			y: -1.0d
+			id: "1354C8A5583D19F6"
+			tasks: [
+				{
+					id: "220DC77A3BF28A0B"
+					type: "item"
+					item: {
+						id: "immersiveengineering:drill"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 5
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "01BEBCB33AA4B13F"
+					type: "item"
+					item: "immersiveengineering:drillhead_steel"
+				}
+			]
+			rewards: [{
+				id: "30A563B9827277F6"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Attract nearby items"
+			x: -5.0d
+			y: 0.0d
+			id: "0C99D55D2BA9F965"
+			tasks: [{
+				id: "7B7FD0173A67D27D"
+				type: "item"
+				item: "botania:magnet_ring"
+			}]
+			rewards: [{
+				id: "5816E041D25BD48F"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+		}
+		{
+			title: "Interact with the world from farther away"
+			x: -5.0d
+			y: 2.0d
+			id: "033F24789002C8BA"
+			tasks: [
+				{
+					id: "367288FB06B834CA"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2A17C0AB5EA7A3F7"
+					type: "item"
+					item: {
+						id: "botania:reach_ring"
+						Count: 1b
+						tag: {
+							baubleUUID: [I;
+								1445187619
+								2032356620
+								-1153732155
+								1306170844
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "194454B65C6709F8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Speed up crop growth"
+			x: 2.5d
+			y: -1.0d
+			subtitle: "Also elephants from Sprout."
+			id: "6097A42A84015C31"
+			tasks: [
+				{
+					id: "52FD804187C16AF6"
+					type: "item"
+					item: "farmersdelight:rich_soil"
+				}
+				{
+					id: "4B7DF3D67E900B38"
+					type: "item"
+					item: "botania:agricarnation"
+				}
+			]
+			rewards: [{
+				id: "799207C86FEF4229"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Bend the world to your will"
+			x: -5.0d
+			y: 3.0d
+			id: "75F862C9BB0C71EB"
+			tasks: [{
+				id: "420674FFD00D6351"
+				type: "item"
+				item: "rftoolsbuilder:builder"
+			}]
+			rewards: [{
+				id: "6AB52032A088CEDF"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Controlled environment"
+			x: 2.5d
+			y: 0.0d
+			id: "7F536D2547B26A8A"
+			tasks: [{
+				id: "171DDC19B2AA073E"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+			rewards: [{
+				id: "18CF54C7E8F5BE59"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+		}
+		{
+			title: "Apply any texture to framed blocks"
+			x: -5.0d
+			y: -2.0d
+			id: "7B14E061C602973C"
+			tasks: [
+				{
+					id: "0A6FCDB54961CFC5"
+					type: "item"
+					item: "framedcompactdrawers:framed_full_one"
+				}
+				{
+					id: "1450082DE78A51EB"
+					type: "item"
+					item: "framedblocks:framed_stairs"
+				}
+			]
+			rewards: [{
+				id: "0169B4D0F53130CF"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Convert stones into ores"
+			x: -2.5d
+			y: 1.0d
+			id: "46E5DE46664243A4"
+			tasks: [{
+				id: "77F127A760C5068C"
+				type: "item"
+				item: "botania:orechid"
+			}]
+			rewards: [{
+				id: "6A385476537ECD5E"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+		}
+		{
+			title: "Extract ores with the IE excavator"
+			x: -2.5d
+			y: 2.0d
+			id: "16C0CABB386EFD96"
+			tasks: [
+				{
+					id: "22E4E33898D3F6A9"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_excavator"
+					criterion: ""
+				}
+				{
+					id: "6F162A8C074AE050"
+					type: "item"
+					item: "immersiveengineering:sample_drill"
+				}
+			]
+			rewards: [{
+				id: "52E5BE5E14AFCFC0"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Modern farming"
+			x: 2.5d
+			y: 1.0d
+			id: "54FCE052C3524ED1"
+			tasks: [
+				{
+					id: "32D8CED5B33CD3CE"
+					type: "item"
+					item: "industrialforegoing:plant_sower"
+				}
+				{
+					id: "4733C0758C35B65C"
+					type: "item"
+					item: "industrialforegoing:plant_gatherer"
+				}
+				{
+					id: "409FA5A2D4A1EBDF"
+					type: "item"
+					item: "industrialforegoing:plant_sower"
+				}
+			]
+			rewards: [{
+				id: "00682FE5CC926DFC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Synthesize ores from thin air"
+			x: -2.5d
+			y: 3.0d
+			id: "0015DC0AD7B361E2"
+			tasks: [
+				{
+					id: "18EB63124CF8864D"
+					type: "item"
+					item: "industrialforegoing:ore_laser_base"
+				}
+				{
+					id: "4A35EE635984E470"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "6A606B3FEEE7BA7F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			id: "3BF28926D9F04438"
+			tasks: [{
+				id: "652A89E95B506D59"
+				type: "item"
+				item: "quark:matrix_enchanter"
+			}]
+			rewards: [{
+				id: "32F31983C9C75458"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Mana Enchanting"
+			x: 4.5d
+			y: -1.0d
+			id: "4CBBDED6EAAFA71F"
+			tasks: [{
+				id: "0350BDDCB4A9B7B3"
+				type: "item"
+				item: "botania:mana_pylon"
+				count: 8L
+			}]
+			rewards: [{
+				id: "2E4DDEE0BD36C07A"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			id: "5AB017C465508811"
+			tasks: [{
+				id: "0AACE3EB4900F2BC"
+				type: "item"
+				item: "botania:brewery"
+			}]
+			rewards: [{
+				id: "604101918D967010"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "First Firepower"
+			x: 0.0d
+			y: -3.0d
+			id: "6BB8F6641F60A14C"
+			tasks: [
+				{
+					id: "20B19C5B1BFBDD6A"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7E6944F9C3007BAD"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4264C80C1B3BFB69"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Wild Wild West"
+			x: 0.0d
+			y: -2.0d
+			id: "5559CB512F8087F2"
+			tasks: [
+				{
+					id: "0031ED676BF5CDEC"
+					type: "item"
+					item: {
+						id: "immersiveengineering:revolver"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 21
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "26AB80FEBF5B439E"
+					type: "item"
+					item: {
+						id: "immersiveengineering:railgun"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 3
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "676EF6266873C42C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:chemthrower"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 4
+								Items: [ ]
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "628DBFFD5CAE3032"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Definitely Not From Another Popular Game"
+			x: 0.0d
+			y: 0.0d
+			id: "13FFA4E2F4CA2C90"
+			tasks: [
+				{
+					id: "47A398DB1E91367E"
+					type: "item"
+					item: {
+						id: "botania:star_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "426004CD60890612"
+					type: "item"
+					item: {
+						id: "botania:terra_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5B69A7A925375C61"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Defense"
+			x: 0.0d
+			y: -1.0d
+			id: "31BFBBAEB936C473"
+			tasks: [
+				{
+					id: "4C4A87164E083E59"
+					type: "item"
+					item: "immersiveengineering:turret_gun"
+				}
+				{
+					id: "0A84CA1258ECA2F9"
+					type: "item"
+					item: "immersiveengineering:razor_wire"
+				}
+			]
+			rewards: [{
+				id: "33670EDEC26FC8C7"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+		}
+		{
+			title: "OP"
+			x: 0.0d
+			y: 1.0d
+			id: "22901EFB127C1526"
+			tasks: [
+				{
+					id: "4523E6F924DDADF1"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "29D4C4B9A106421A"
+					type: "item"
+					item: "mythicbotany:mjoellnir"
+				}
+			]
+			rewards: [{
+				id: "07E09FE6EBF2F621"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+	]
+}

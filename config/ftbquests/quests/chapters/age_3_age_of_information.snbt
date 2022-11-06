@@ -1,0 +1,347 @@
+{
+	id: "14797FE929076AC2"
+	group: "5C754B3BE2DBFF8B"
+	order_index: 2
+	filename: "age_3_age_of_information"
+	title: "Age 3: Age of Information"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "QE Iron"
+			x: 0.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Most efficiently made with the Arc Furnace!"
+			dependencies: [
+				"6CDAEF46836EE43F"
+				"59AC329FDC33FB73"
+			]
+			dependency_requirement: "one_completed"
+			id: "3C809F49F48A619E"
+			tasks: [{
+				id: "7AD1A1738E9510F4"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+			}]
+			rewards: [{
+				id: "71350B26CD26E6CA"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			description: ["With all the quartz needed for Refined Storage, automating it isn't a bad idea. Botania's orechid ignem or conjuration catalyst or Create's soul sand washing are excellent options."]
+			optional: true
+			id: "71BBA8022CD342F8"
+			tasks: [{
+				id: "29B0B43E0B621662"
+				type: "checkmark"
+				title: "Automating Quartz"
+			}]
+		}
+		{
+			title: "Blaze It!"
+			x: 3.0d
+			y: -4.0d
+			shape: "square"
+			description: ["Completing Fine Dining will remove the necessity of crafting these."]
+			dependencies: ["2302B3C51203B42E"]
+			id: "63DE620DC044B230"
+			tasks: [{
+				id: "396DA877DA59C722"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+			rewards: [{
+				id: "24A526CF605089CB"
+				type: "item"
+				item: "create:cinder_flour"
+				count: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			shape: "square"
+			description: [""]
+			dependencies: [
+				"3C809F49F48A619E"
+				"63DE620DC044B230"
+				"0EC1BAB6F243FC58"
+			]
+			id: "021333DFAEB14CD6"
+			tasks: [{
+				id: "1F932D32750B1B84"
+				type: "item"
+				item: "kubejs:refined_alloy"
+			}]
+			rewards: [{
+				id: "642DD9A3BEE83B8E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Not Sponsored by Intel"
+			x: -3.0d
+			y: -4.0d
+			shape: "square"
+			id: "16C2EA95D83DF380"
+			tasks: [
+				{
+					id: "1EAC0EC0DF134BEB"
+					type: "item"
+					item: "refinedstorage:processor_binding"
+				}
+				{
+					id: "1894EADBAB1C7AC2"
+					type: "item"
+					item: "refinedstorage:raw_basic_processor"
+				}
+				{
+					id: "2477B566274C0440"
+					type: "item"
+					item: "refinedstorage:raw_improved_processor"
+				}
+				{
+					id: "61CDAF7BC4259997"
+					type: "item"
+					item: "refinedstorage:raw_advanced_processor"
+				}
+			]
+			rewards: [{
+				id: "7FDBAE6D4C237AC3"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+				count: 32
+			}]
+		}
+		{
+			title: "Processing the Processors"
+			x: -3.0d
+			y: -2.5d
+			shape: "square"
+			dependencies: [
+				"16C2EA95D83DF380"
+				"44070C472614FCD2"
+			]
+			id: "55BDB54A87838144"
+			tasks: [
+				{
+					id: "5A9848C87C884CA2"
+					type: "item"
+					item: "refinedstorage:basic_processor"
+				}
+				{
+					id: "025F9771B56FCC06"
+					type: "item"
+					item: "refinedstorage:improved_processor"
+				}
+				{
+					id: "65B0FDA3601C62C5"
+					type: "item"
+					item: "refinedstorage:advanced_processor"
+				}
+			]
+			rewards: [{
+				id: "1DA87B60338D1518"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "The Digital Age"
+			x: -2.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Go invent Facebook or something."
+			dependencies: ["55BDB54A87838144"]
+			id: "6837893A826799DE"
+			tasks: [{
+				id: "5FF9907ACAD3BD63"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+			rewards: [
+				{
+					id: "4FA99E592521E362"
+					type: "item"
+					item: "minecraft:apple"
+				}
+				{
+					id: "45AA706E6C47FEC7"
+					type: "item"
+					item: {
+						id: "minecraft:glass_pane"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Windows\"}"
+							}
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "The more of these you craft, the better."
+			dependencies: [
+				"6837893A826799DE"
+				"021333DFAEB14CD6"
+			]
+			size: 2.0d
+			id: "1F0FC70E908E990C"
+			tasks: [{
+				id: "44FC0A78D585222C"
+				type: "item"
+				item: "refinedstorage:machine_casing"
+			}]
+			rewards: [{
+				id: "34132C5C2C55CFA6"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Advanced Computing"
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["6837893A826799DE"]
+			optional: true
+			id: "7980346A937BDC1B"
+			tasks: [
+				{
+					id: "6AC5E95E9AD43CB5"
+					type: "item"
+					item: "computercraft:computer_advanced"
+				}
+				{
+					id: "3258A96CCBC56B00"
+					type: "item"
+					item: "computercraft:turtle_advanced"
+				}
+			]
+			rewards: [{
+				id: "07709C430308C0B8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Whole New World"
+			x: -0.5d
+			y: 3.0d
+			shape: "circle"
+			description: ["This makes your life so much easier."]
+			dependencies: ["1F0FC70E908E990C"]
+			optional: true
+			id: "1782572412FC8D47"
+			tasks: [
+				{
+					id: "71CADBBEE1EA6214"
+					type: "item"
+					item: "refinedstorage:crafting_grid"
+				}
+				{
+					id: "1BE97CC87C7EBC9C"
+					type: "item"
+					item: "refinedstorage:disk_drive"
+				}
+				{
+					id: "4C3C2CA552CE4CDD"
+					type: "item"
+					item: "refinedstorage:controller"
+				}
+			]
+			rewards: [
+				{
+					id: "5BBE178F3387808A"
+					type: "item"
+					item: "refinedstorage:raw_basic_processor"
+					count: 8
+				}
+				{
+					id: "32836AF6FF25128B"
+					type: "item"
+					item: "immersiveengineering:component_iron"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			subtitle: "Biggest time-saver in the pack."
+			dependencies: ["1782572412FC8D47"]
+			optional: true
+			id: "59FB441A8C7C2DB1"
+			tasks: [{
+				id: "44A716CC7F1D697B"
+				type: "item"
+				item: "refinedstorage:crafter"
+				count: 4L
+			}]
+			rewards: [{
+				id: "28D556B31E0D06FC"
+				type: "item"
+				item: "refinedstorage:advanced_processor"
+				count: 8
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			subtitle: "Definitely not a cell phone"
+			dependencies: ["1782572412FC8D47"]
+			optional: true
+			id: "54CB018BCEB33337"
+			tasks: [
+				{
+					id: "65E43439673BB7ED"
+					type: "item"
+					item: "refinedstorage:wireless_transmitter"
+				}
+				{
+					id: "7AFA51A695D87C3D"
+					type: "item"
+					item: "refinedstorageaddons:wireless_crafting_grid"
+				}
+			]
+		}
+		{
+			title: "Botanical Cake"
+			x: 4.0d
+			y: -2.5d
+			subtitle: "Cakes are a top-tier mana source."
+			dependencies: ["63DE620DC044B230"]
+			optional: true
+			id: "3F952C979893F35D"
+			tasks: [
+				{
+					id: "323929651C878946"
+					type: "item"
+					item: "minecraft:cake"
+				}
+				{
+					id: "7F059FBD26CB5CDE"
+					type: "item"
+					item: "botania:kekimurus"
+				}
+			]
+			rewards: [{
+				id: "52490BF808E1CDD2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

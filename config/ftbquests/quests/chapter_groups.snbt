@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "5C754B3BE2DBFF8B", title: "Ages" }
+		{ id: "43F7087BBC4FCDBB", title: "Utility" }
+		{ id: "018A902D5AD82D1D", title: "Challenge" }
+	]
+}

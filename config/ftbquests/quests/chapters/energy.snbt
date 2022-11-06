@@ -1,0 +1,378 @@
+{
+	id: "712E6C4C70B60DA2"
+	group: "43F7087BBC4FCDBB"
+	order_index: 3
+	filename: "energy"
+	title: "Energy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -3.5d
+			y: -0.5d
+			width: 1.5d
+			height: 1.0d
+			rotation: 0.0d
+			image: "beyond_earth:textures/timer/timer1.png"
+			hover: ["Age 1"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -4.5d
+			y: 0.5d
+			width: 1.5d
+			height: 1.0d
+			rotation: 0.0d
+			image: "beyond_earth:textures/timer/timer2.png"
+			hover: ["Age 2"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			width: 1.5d
+			height: 1.0d
+			rotation: 0.0d
+			image: "beyond_earth:textures/timer/timer3.png"
+			hover: ["Age 3"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			width: 1.5d
+			height: 1.0d
+			rotation: 0.0d
+			image: "beyond_earth:textures/timer/timer4.png"
+			hover: ["Age 4"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "beyond_earth:textures/timer/timer5.png"
+			hover: ["Age 5"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: -2.5d
+			y: -0.5d
+			subtitle: "Mana --> RF"
+			id: "6A3DB8682AAF40C1"
+			tasks: [{
+				id: "24C10F5A00F59F22"
+				type: "item"
+				item: "botania:mana_fluxfield"
+			}]
+			rewards: [{
+				id: "2F2559C9B5E54CA5"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			subtitle: "Rotational Power --> RF"
+			id: "66CFC068421AF3C7"
+			tasks: [{
+				id: "165E91AD7CF65C0A"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "212CC1AF4D5A83A2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Clean Energy"
+			x: -2.5d
+			y: 0.5d
+			id: "10FED5D749E31362"
+			tasks: [
+				{
+					id: "39BB201E48269A5C"
+					type: "item"
+					item: "immersiveengineering:windmill"
+				}
+				{
+					id: "7F8DBB85F5E62716"
+					type: "item"
+					item: "immersiveengineering:watermill"
+				}
+				{
+					id: "2639D88F65CA0118"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+				}
+			]
+			rewards: [{
+				id: "208264C139B86ED7"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			id: "1C316851CF653531"
+			tasks: [{
+				id: "39412126E5374053"
+				type: "item"
+				item: "beyond_earth:coal_generator"
+			}]
+			rewards: [{
+				id: "1EE957B973301DED"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			id: "285EE7948B28159D"
+			tasks: [{
+				id: "459AE8BDF690A594"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+			rewards: [{
+				id: "574E58A18C279894"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			id: "7B75DF6C385DE3FE"
+			tasks: [{
+				id: "2C05D173E9D8E9FC"
+				type: "item"
+				item: "beyond_earth:solar_panel"
+			}]
+			rewards: [{
+				id: "0C811382FE6D2199"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			subtitle: "See in age 2."
+			id: "331EE80B4FE2784C"
+			tasks: [{
+				id: "0BE861BC65330F7B"
+				type: "checkmark"
+				title: "Diesel Generator"
+			}]
+			rewards: [{
+				id: "216B025E8193B32B"
+				type: "xp"
+				xp: 1
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			subtitle: "Also see endergetic generator in age 4."
+			id: "01F44D106010F127"
+			tasks: [
+				{
+					id: "79E7D6F2D10A0C63"
+					type: "item"
+					item: "rftoolspower:blazing_generator"
+				}
+				{
+					id: "1519E2A7E9EAC552"
+					type: "item"
+					item: "rftoolspower:blazing_agitator"
+				}
+				{
+					id: "37069751A464C41F"
+					type: "item"
+					item: "rftoolspower:blazing_infuser"
+				}
+			]
+			rewards: [{
+				id: "53C14C1CCF5B01D8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			id: "2774B8F5ECAF0967"
+			tasks: [
+				{
+					id: "4BC8204F93A6279F"
+					type: "item"
+					item: "industrialforegoing:biofuel_generator"
+				}
+				{
+					id: "307CE75AB59B417C"
+					type: "item"
+					item: "industrialforegoing:bioreactor"
+				}
+			]
+			rewards: [{
+				id: "2F25FD27ECFE995D"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			subtitle: "Mekanism."
+			description: ["Mekanism."]
+			id: "7505FD8A482F15F1"
+			tasks: [{
+				id: "13DB7D0EC989D7EC"
+				type: "checkmark"
+				title: "Mekanism."
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			subtitle: "Get this bad boy running to solve all your power needs."
+			description: ["Book explains it, but it requires each other Industrial Foregoing generator to be running near it to work."]
+			id: "0772E46F2A658BE5"
+			tasks: [{
+				id: "4307C329B5A58208"
+				type: "item"
+				item: "industrialforegoing:mycelial_reactor"
+			}]
+			rewards: [{
+				id: "33C5EF4454278F75"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Energy Transfer/Storage"
+			x: 1.5d
+			y: 0.5d
+			subtitle: "Watch out for those wires..."
+			id: "327BAE6EE6D655B7"
+			tasks: [
+				{
+					id: "2159479F1B43E2D8"
+					type: "item"
+					item: "immersiveengineering:capacitor_hv"
+				}
+				{
+					id: "3811E430E5163770"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "5073A0C893F54AC4"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+				{
+					id: "2ABB583EE631F6B2"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+			]
+			rewards: [
+				{
+					id: "712F723D60B643E9"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+				{
+					id: "3AD02F56A391E599"
+					type: "item"
+					item: "minecraft:terracotta"
+					count: 10
+				}
+			]
+		}
+		{
+			title: "Energy Transfer/Storage pt2"
+			x: 1.5d
+			y: 1.5d
+			id: "332308FAB28DDC04"
+			tasks: [
+				{
+					id: "1E060E16C3A55166"
+					type: "item"
+					item: "rftoolspower:dimensionalcell_advanced"
+					count: 4L
+				}
+				{
+					id: "3F4300B1B634B2F8"
+					type: "item"
+					item: "rftoolspower:powercell_card"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "5EEF4C477692C57F"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Energy Transfer/Storage pt?"
+			x: 1.5d
+			y: 2.5d
+			id: "5C2A354E1CED9FCB"
+			tasks: [
+				{
+					id: "08AC78C7E4C68262"
+					type: "item"
+					item: "mekanism:induction_casing"
+				}
+				{
+					id: "47BFF3DAB07E75AE"
+					type: "item"
+					item: "mekanism:induction_port"
+				}
+				{
+					id: "5560603C838AD462"
+					type: "item"
+					item: "mekanism:ultimate_induction_cell"
+				}
+				{
+					id: "0C916FC3A4640E4C"
+					type: "item"
+					item: "mekanism:ultimate_induction_provider"
+				}
+				{
+					id: "3C47908482275DDF"
+					type: "item"
+					item: "mekanism:ultimate_universal_cable"
+				}
+			]
+			rewards: [{
+				id: "168566B33840DFC6"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+	]
+}

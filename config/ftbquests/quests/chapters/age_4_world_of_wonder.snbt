@@ -1,0 +1,453 @@
+{
+	id: "38DB8A98A6ACD527"
+	group: "5C754B3BE2DBFF8B"
+	order_index: 3
+	filename: "age_4_world_of_wonder"
+	title: "Age 4: Going Above and Beyond"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Elven Craftsmanship"
+			x: 2.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "The elves can trade valuable materials..."
+			dependencies: ["2013F46DF5493AE8"]
+			id: "1FB61F5B0F56FD66"
+			tasks: [
+				{
+					id: "7086CF86C1334A17"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "2AAB35D1C6B09C47"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+				{
+					id: "7E193DC297E9C479"
+					type: "item"
+					item: "botania:glimmering_livingwood_log"
+					count: 3L
+				}
+				{
+					id: "00048B04C24DE8A3"
+					type: "item"
+					item: "botania:livingwood_log"
+					count: 8L
+				}
+				{
+					id: "434BC2409B0FB7BF"
+					type: "item"
+					item: "botania:mana_pool"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "6E67711770471E44"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			title: "Friends"
+			x: -7.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Shift right-click villagers to pick them up!"
+			id: "7D2A14FEAF1AA604"
+			tasks: [{
+				id: "2F01F88955620D5A"
+				type: "item"
+				item: "easy_villagers:villager"
+			}]
+			rewards: [{
+				id: "0F9A5EAFDF57806D"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 32
+			}]
+		}
+		{
+			title: "Prepare for battle!"
+			x: 5.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Carry out the ritual of Gaia and overcome what is stopping you..."]
+			dependencies: ["1FB61F5B0F56FD66"]
+			id: "66EE8811689E1330"
+			tasks: [
+				{
+					id: "1117702BA747B0B2"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 4L
+				}
+				{
+					id: "4C0C1D5771DD9664"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+			]
+			rewards: [{
+				id: "3771FFD8AE788369"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "When Magic and Computers Meet"
+			x: 0.0d
+			y: 5.0d
+			shape: "square"
+			description: ["Feel the raw power at your fingertips."]
+			dependencies: [
+				"1A86EC566775DD43"
+				"1F7DA0DCF20B31D1"
+				"1F0FC70E908E990C"
+				"5979B9CE45CE7869"
+			]
+			size: 2.5d
+			id: "24812D5B9AC56D6D"
+			tasks: [{
+				id: "2DC9E092361E2164"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+			rewards: [{
+				id: "53497842B8D07B15"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "You can use the conjuration catalyst to get more of these."
+			dependencies: ["66EE8811689E1330"]
+			id: "4FDFD9DD43A81050"
+			tasks: [{
+				id: "1C1EA0E833BA2E5D"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+			rewards: [{
+				id: "1196E0D0E88B7761"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+		}
+		{
+			title: "Neural Networks"
+			x: -5.0d
+			y: 5.0d
+			shape: "square"
+			dependencies: [
+				"7D2A14FEAF1AA604"
+				"27BBBF2C5DB7ED17"
+				"55BDB54A87838144"
+			]
+			size: 1.5d
+			id: "1A86EC566775DD43"
+			tasks: [{
+				id: "3FCFCDBE14029B25"
+				type: "item"
+				item: "extrastorage:neural_processor"
+			}]
+			rewards: [{
+				id: "3F2119D71EBB6CE6"
+				type: "item"
+				item: "minecraft:crying_obsidian"
+				count: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Automate this process."
+			dependencies: ["58547B0F418E779B"]
+			id: "2E2DA13ECD2DBEA7"
+			tasks: [{
+				id: "7BCAC14CB9870EDE"
+				type: "item"
+				item: "waystones:warp_dust"
+			}]
+			rewards: [{
+				id: "6751FBCDBAA15CB9"
+				type: "item"
+				item: "waystones:warp_dust"
+				count: 32
+			}]
+		}
+		{
+			title: "Warp Tech"
+			x: -5.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Look at all the uses for these beautiful gems."]
+			dependencies: ["2E2DA13ECD2DBEA7"]
+			id: "27BBBF2C5DB7ED17"
+			tasks: [{
+				id: "0D8C00999CC62EA3"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "282384534977E6E6"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.0d
+			shape: "square"
+			dependencies: ["4FDFD9DD43A81050"]
+			size: 1.5d
+			id: "1F7DA0DCF20B31D1"
+			tasks: [{
+				id: "116D584D7AFE0553"
+				type: "item"
+				item: "botania:gaia_ingot"
+			}]
+			rewards: [{
+				id: "0D8A02C0D29253E1"
+				type: "item"
+				item: "botania:blacker_lotus"
+				count: 5
+			}]
+		}
+		{
+			title: "First Generation Automation"
+			x: -7.0d
+			y: 10.0d
+			shape: "square"
+			dependencies: ["24812D5B9AC56D6D"]
+			size: 1.5d
+			id: "4F4BF2728C984D44"
+			tasks: [{
+				id: "716B976A67D202F8"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "7DE2BC1E1A8E11BE"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			title: "Wireless EVERYTHING"
+			x: -5.5d
+			y: 14.0d
+			dependencies: ["24812D5B9AC56D6D"]
+			size: 1.5d
+			optional: true
+			id: "3A4C452D569CCB09"
+			tasks: [{
+				id: "4D52FFFDE7637BC6"
+				type: "item"
+				item: "modularrouters:blank_module"
+			}]
+			rewards: [{
+				id: "27F43A58F6129F52"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 16.5d
+			shape: "square"
+			subtitle: "Let the space race begin"
+			dependencies: ["24812D5B9AC56D6D"]
+			size: 2.0d
+			id: "1D9A52F08281D397"
+			tasks: [{
+				id: "16FA8E3DA372AE0A"
+				type: "item"
+				item: "beyond_earth:nasa_workbench"
+			}]
+		}
+		{
+			title: "Worldshaper"
+			x: 5.5d
+			y: 14.0d
+			subtitle: "The earth bends to your will"
+			dependencies: ["24812D5B9AC56D6D"]
+			size: 1.5d
+			optional: true
+			id: "776A3AA9DE6EA8C9"
+			tasks: [{
+				id: "15645C3401210164"
+				type: "item"
+				item: "rftoolsbuilder:builder"
+			}]
+			rewards: [{
+				id: "7581DF905CA904DD"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_def"
+			}]
+		}
+		{
+			title: "Dimensional Power"
+			x: 7.0d
+			y: 10.0d
+			dependencies: ["24812D5B9AC56D6D"]
+			size: 1.5d
+			optional: true
+			id: "2868CDE8CB80A6EF"
+			tasks: [
+				{
+					id: "09E2EE920B3A0717"
+					type: "item"
+					item: "rftoolspower:dimensionalcell"
+				}
+				{
+					id: "008F5A567F4352A9"
+					type: "item"
+					item: "rftoolspower:endergenic"
+				}
+			]
+			rewards: [{
+				id: "6E3F23AC6D87ACA3"
+				type: "item"
+				item: "rftoolspower:powercell_card"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 18.5d
+			shape: "square"
+			dependencies: ["1D9A52F08281D397"]
+			id: "2A68AD1B80DE3ACD"
+			tasks: [{
+				id: "407BF52A7F286D75"
+				type: "item"
+				item: "beyond_earth:oxygen_loader"
+			}]
+			rewards: [{
+				id: "48A851E6F451CA77"
+				type: "item"
+				item: "minecraft:white_wool"
+				count: 5
+			}]
+		}
+		{
+			x: 2.0d
+			y: 20.0d
+			shape: "square"
+			dependencies: ["2A68AD1B80DE3ACD"]
+			id: "6895E923B5A35ACE"
+			tasks: [
+				{
+					id: "548E91D93CCE1F75"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6D59AC61AF4CAB5F"
+					type: "item"
+					item: {
+						id: "beyond_earth:oxygen_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77829E18AD63CE55"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5C8F71AD3DC18572"
+					type: "item"
+					item: {
+						id: "beyond_earth:space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1DBBB7143D16A8B1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Fuel"
+			x: -2.0d
+			y: 18.5d
+			shape: "square"
+			subtitle: "The Explorer's Compass can help you find Oil Wells."
+			dependencies: ["1D9A52F08281D397"]
+			id: "4682C350C75028F5"
+			tasks: [
+				{
+					id: "37CE6FA757D541C0"
+					type: "item"
+					item: "beyond_earth:fuel_refinery"
+				}
+				{
+					id: "1EBE82688C258B15"
+					type: "item"
+					item: "beyond_earth_giselle_addon:fuel_loader"
+				}
+			]
+			rewards: [{
+				id: "61B0DD62A7CF3842"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Launch Pad"
+			x: -2.0d
+			y: 20.0d
+			shape: "square"
+			subtitle: "Are you ready to launch?"
+			dependencies: ["1D9A52F08281D397"]
+			id: "4EDE3880386CB03B"
+			tasks: [{
+				id: "190188189DD1EB48"
+				type: "item"
+				item: "beyond_earth:rocket_launch_pad"
+				count: 9L
+			}]
+			rewards: [{
+				id: "39EEC4EF86FBCA5C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

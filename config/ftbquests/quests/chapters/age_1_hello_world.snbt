@@ -1,0 +1,630 @@
+{
+	id: "57B24AE42FC08DC4"
+	group: "5C754B3BE2DBFF8B"
+	order_index: 0
+	filename: "age_1_hello_world"
+	title: "Age 1: Age of Invention"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting Equipped"
+			x: 0.0d
+			y: -3.5d
+			shape: "square"
+			subtitle: "Craft a stone hammer from Tetra and right-click a crafting table to make a workbench."
+			id: "474555C6416F8B1A"
+			tasks: [{
+				id: "69C204E93B69D5D3"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+			rewards: [
+				{
+					id: "42475D79C604BC57"
+					type: "item"
+					item: "minecraft:stick"
+					count: 2
+				}
+				{
+					id: "70F3C8D08463CBBB"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Ready to Create?"
+			x: -1.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "You'll need lots of this stuff."
+			dependencies: ["474555C6416F8B1A"]
+			id: "11AA25865EBBEE9C"
+			tasks: [
+				{
+					id: "3C352E2875AD6E00"
+					type: "item"
+					item: "create:zinc_nugget"
+				}
+				{
+					id: "33676C6A50ADFF9C"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+			]
+			rewards: [{
+				id: "508CED1C159872B6"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 10
+			}]
+		}
+		{
+			title: "Straining to get Andesite Alloy"
+			x: 2.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "Check out the mixer's recipes for Andesite Alloy- time to start automating!"
+			description: [
+				""
+				"Check out the strainer recipes- make a good one if you have the resources!"
+			]
+			dependencies: ["2302B3C51203B42E"]
+			id: "4A847CF49BC53B8C"
+			tasks: [
+				{
+					id: "26F70854EB83E8D6"
+					type: "item"
+					item: "waterstrainer:strainer_base"
+				}
+				{
+					id: "0A96FBD1C8BED293"
+					type: "item"
+					item: "waterstrainer:string_mesh"
+				}
+			]
+			rewards: [
+				{
+					id: "483C0D81B10779C4"
+					type: "item"
+					item: "create:zinc_nugget"
+				}
+				{
+					id: "4BFEF105A4D48EDE"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+			]
+		}
+		{
+			title: "Infastructure"
+			x: 0.0d
+			y: -1.0d
+			shape: "square"
+			dependencies: ["11AA25865EBBEE9C"]
+			id: "2302B3C51203B42E"
+			tasks: [
+				{
+					id: "4819D656E99CF583"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "4E7336A45C2FD823"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "10E1BAD49826EA6D"
+					type: "item"
+					item: "create:wrench"
+				}
+			]
+			rewards: [
+				{
+					id: "567489E4A02EFF91"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "35C1FCADD10606D3"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+			]
+		}
+		{
+			title: "Flowertech!"
+			x: 5.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Remember: You can duplicate flowers infinitely by bone mealing petals on the ground and cutting them with shears."
+			dependencies: ["474555C6416F8B1A"]
+			id: "567F8AFFE000E413"
+			tasks: [
+				{
+					id: "7BCE6EC332341C76"
+					type: "item"
+					item: "botania:apothecary_default"
+				}
+				{
+					id: "159A2D911A950FA7"
+					type: "item"
+					item: "botania:flower_bag"
+				}
+			]
+			rewards: [
+				{
+					id: "0960ED0BEB7753DD"
+					type: "item"
+					item: "botania:lexicon"
+				}
+				{
+					id: "518FFAA5A22651B8"
+					type: "item"
+					item: "botania:white_petal"
+				}
+			]
+		}
+		{
+			title: "Mana"
+			x: 5.0d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Endoflames are like mana furnaces."
+			dependencies: ["567F8AFFE000E413"]
+			id: "7DD4D7DABB5D54FF"
+			tasks: [
+				{
+					id: "521280C05ACD578F"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+				{
+					id: "5B1E0180C91A2AE1"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "40160C1254B1F834"
+					type: "item"
+					item: {
+						id: "botania:twig_wand"
+						Count: 1b
+						tag: {
+							color1: 0
+							color2: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "36B88BF168391022"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+		}
+		{
+			title: "Alloy Kiln"
+			x: -5.0d
+			y: -2.0d
+			shape: "square"
+			dependencies: ["474555C6416F8B1A"]
+			id: "59AC329FDC33FB73"
+			tasks: [
+				{
+					id: "7810C0A0DE5C7024"
+					type: "item"
+					item: "immersiveengineering:alloybrick"
+					count: 8L
+				}
+				{
+					id: "11813A1A71D2AA76"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6C3E9DA685517151"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+		}
+		{
+			title: "Coke Oven"
+			x: -5.0d
+			y: -0.5d
+			shape: "circle"
+			subtitle: "Check out a certain Wooden Crate in the Storage chapter."
+			dependencies: ["59AC329FDC33FB73"]
+			optional: true
+			id: "1A8DCDEC9FD4CF86"
+			tasks: [{
+				id: "30C7D153AA3C5F9B"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "787E4F85AFF2A3AC"
+				type: "item"
+				item: "minecraft:coal"
+				count: 32
+			}]
+		}
+		{
+			title: "Brass Age"
+			x: -3.0d
+			y: -1.5d
+			shape: "square"
+			dependencies: [
+				"11AA25865EBBEE9C"
+				"59AC329FDC33FB73"
+			]
+			id: "230E172543F21270"
+			tasks: [{
+				id: "03DDE398F2FB2F26"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+			rewards: [{
+				id: "338CBE51689E5E32"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Time for a tree farm"
+			x: -3.5d
+			y: 1.0d
+			shape: "square"
+			dependencies: [
+				"230E172543F21270"
+				"2302B3C51203B42E"
+			]
+			id: "486DDABBD7854A37"
+			tasks: [
+				{
+					id: "61497743E2E1EE31"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "5D1158A4E6F663B7"
+					type: "item"
+					item: "create:deployer"
+				}
+			]
+			rewards: [{
+				id: "5D29E0081E346610"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			subtitle: "In this modpack, all quests are important, but only the \"square\" quests are required."
+			id: "7D99843D913E19B3"
+			tasks: [{
+				id: "3EFEDC96B0E4F311"
+				type: "checkmark"
+				title: "ReadMe"
+			}]
+			rewards: [{
+				id: "6125FA2786E1D404"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Redstone Dream"
+			x: 3.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Check out Redstone's mixing recipes. You'll want a farm for this."
+			dependencies: [
+				"58547B0F418E779B"
+				"2302B3C51203B42E"
+			]
+			id: "2E516F9ECD2D9C63"
+			tasks: [
+				{
+					id: "0AD9735A75997302"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "41B59A934B22CABE"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "165F980B9C078367"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "5F5D58CDED9E5848"
+					type: "item"
+					item: "minecraft:weeping_vines"
+				}
+				{
+					id: "7FC2514C315EE1BB"
+					type: "item"
+					item: "minecraft:sugar"
+				}
+				{
+					id: "65425D50BC586B07"
+					type: "item"
+					item: "create:mechanical_harvester"
+				}
+			]
+			rewards: [
+				{
+					id: "6EE325BEF574A98C"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 2
+				}
+				{
+					id: "3F980E308DA0928D"
+					type: "item"
+					item: "minecraft:weeping_vines"
+					count: 32
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "The Nether is extra tough in this pack- good luck!"
+			description: ["Check out the Botanical Brewery for better fire resistance potions."]
+			dependencies: ["474555C6416F8B1A"]
+			id: "58547B0F418E779B"
+			tasks: [{
+				id: "45A17D38A90241AB"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "01F7E14545C1DBA6"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:fire_resistance"
+					}
+				}
+			}]
+		}
+		{
+			title: "Cbble"
+			x: -2.0d
+			y: 1.5d
+			shape: "square"
+			dependencies: ["2302B3C51203B42E"]
+			id: "1B27A2F65DAE8F1C"
+			tasks: [
+				{
+					id: "70504F06757D0331"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+				{
+					id: "5E6D9A5872148349"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+			rewards: [{
+				id: "7A849BAC68C728CD"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			title: "Iron"
+			x: 0.0d
+			y: 0.5d
+			subtitle: "Automating iron is a good idea- you can do the old-fashioned way or wash gravel."
+			dependencies: ["2302B3C51203B42E"]
+			optional: true
+			id: "3E4657ED28B58125"
+			tasks: [{
+				id: "31CE29CF38DF85B1"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+			rewards: [{
+				id: "50DDA8C1BFE6661E"
+				type: "item"
+				item: "easy_villagers:villager"
+			}]
+		}
+		{
+			title: "EZ ETs"
+			x: 1.5d
+			y: 4.5d
+			shape: "square"
+			subtitle: "I think the sequenced assembly recipe is easier, but it's up to you!"
+			dependencies: [
+				"3E4657ED28B58125"
+				"2E516F9ECD2D9C63"
+			]
+			size: 1.5d
+			id: "5F2049F07BC45349"
+			tasks: [{
+				id: "176D0C53BCBC6B25"
+				type: "item"
+				item: "create:electron_tube"
+				count: 10L
+			}]
+			rewards: [{
+				id: "372CD6553C5BFB17"
+				type: "item"
+				item: "create:electron_tube"
+				count: 10
+			}]
+		}
+		{
+			title: "Like Clockwork"
+			x: -1.5d
+			y: 4.5d
+			shape: "square"
+			subtitle: "You should have automated everything except for the gold at this point."
+			description: ["There are options other than zombie pigmen farms if you desire to automate gold- washing red sand/soul sand or any of the ore options in Tools are possibilities."]
+			dependencies: [
+				"3E4657ED28B58125"
+				"1687A79BB21A8CE9"
+			]
+			size: 1.5d
+			id: "1A153B48FFCC563F"
+			tasks: [{
+				id: "03B998FD7CB8C30F"
+				type: "item"
+				item: "create:precision_mechanism"
+				count: 10L
+			}]
+			rewards: [{
+				id: "534FD8391C4A7CB4"
+				type: "item"
+				item: "create:precision_mechanism"
+				count: 10
+			}]
+		}
+		{
+			title: "Allocating Alloy"
+			x: 0.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "You better automate this."
+			dependencies: [
+				"1B27A2F65DAE8F1C"
+				"4A847CF49BC53B8C"
+			]
+			id: "2979C8DA0DCBD513"
+			tasks: [
+				{
+					id: "66869C94A7528C91"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 64L
+				}
+				{
+					id: "208268F2A8471698"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "54273B3F09CB8219"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [{
+				id: "6B69B4BB1183E985"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Supply and Demand"
+			x: -2.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "Prepare for Precision Mechanism automation."
+			dependencies: [
+				"486DDABBD7854A37"
+				"2979C8DA0DCBD513"
+			]
+			id: "1687A79BB21A8CE9"
+			tasks: [
+				{
+					id: "6BB6FE119572E2B7"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "3FC09F82B5640370"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "1CEA6234D01741D6"
+					type: "item"
+					item: "create:deployer"
+					count: 2L
+				}
+				{
+					id: "26D9900408BBE454"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "6647F048FB55630C"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [{
+				id: "4DB3E2FF0F22F116"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Mechanical Crafting"
+			x: -2.5d
+			y: -0.5d
+			shape: "square"
+			dependencies: [
+				"2302B3C51203B42E"
+				"230E172543F21270"
+			]
+			id: "1DD974B6F18EC756"
+			tasks: [{
+				id: "167EDC19180D0080"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 21L
+			}]
+			rewards: [{
+				id: "52431FC4D0872BEB"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16
+			}]
+		}
+		{
+			title: "Crushing the Opps"
+			x: -4.5d
+			y: 0.5d
+			subtitle: "Excellent for early-game ore processing and gravel/sand production."
+			dependencies: ["1DD974B6F18EC756"]
+			optional: true
+			id: "2D3680C487610B3A"
+			tasks: [{
+				id: "4AD7CF28EB52CD91"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "773164303C899942"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+	]
+}

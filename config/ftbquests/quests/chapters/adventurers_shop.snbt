@@ -1,0 +1,298 @@
+{
+	id: "41600781B8581AF5"
+	group: "018A902D5AD82D1D"
+	order_index: 1
+	filename: "adventurers_shop"
+	title: "Adventurer's Shop"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Find all the biomes!"
+			x: -2.5d
+			y: -1.0d
+			id: "7FF3F67C2A3A724F"
+			tasks: [{
+				id: "6D6D815F1E63BAB1"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "4DB8592F67B9E58A"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "naturescompass:naturescompass"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "033A2491FBE47735"
+					type: "custom"
+					title: "Repeatable Quest"
+					icon: "kubejs:refresh"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "Find all the structures!"
+			x: 0.0d
+			y: -1.0d
+			id: "3D77BC844F49815C"
+			tasks: [
+				{
+					id: "2195B9CB5441F093"
+					type: "item"
+					item: "create:precision_mechanism"
+					count: 16L
+					consume_items: true
+				}
+				{
+					id: "008530B7FCF5CC7B"
+					type: "item"
+					item: "create:electron_tube"
+					count: 32L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "1B0FC8EFA4219F6A"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "explorerscompass:explorerscompass"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "369F352CFB614E12"
+					type: "custom"
+					title: "Repeatable Quest"
+					icon: "kubejs:refresh"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "Build all the buildings!"
+			x: 2.5d
+			y: -1.0d
+			id: "7E5F9D9E671A26CB"
+			tasks: [
+				{
+					id: "2D34F5DBDE0D3081"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+					count: 8L
+					consume_items: true
+				}
+				{
+					id: "169258753D5AC9F4"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 8L
+					consume_items: true
+				}
+				{
+					id: "707B658F1016C9E4"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "029E9CB42E3C43AB"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "buildinggadgets:gadget_building"
+						Count: 1b
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+								data: { }
+							}
+						}
+					}
+				}
+				{
+					id: "4903F2522CE0B656"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "buildinggadgets:gadget_exchanging"
+						Count: 1b
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+								data: { }
+							}
+						}
+					}
+				}
+				{
+					id: "0B2A59C1B3084618"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "buildinggadgets:gadget_copy_paste"
+						Count: 1b
+						tag: {
+							mode: 0b
+							template_id: [I;
+								-1836261394
+								-1386789894
+								-1826865214
+								-1752865255
+							]
+						}
+					}
+				}
+				{
+					id: "005F952CBED7EFC4"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "buildinggadgets:gadget_destruction"
+						Count: 1b
+						tag: {
+							overlay: 1b
+							fuzzy: 1b
+						}
+					}
+				}
+				{
+					id: "5EA67B3563E106E8"
+					type: "custom"
+					title: "Repeatable Quest"
+					icon: "kubejs:refresh"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "Speed up all the machines!"
+			x: -2.5d
+			y: 1.0d
+			id: "43D17CBC3A2FD5DD"
+			tasks: [{
+				id: "2F64BDD1D5D11610"
+				type: "item"
+				item: "waystones:warp_dust"
+				count: 128L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "119933DC02E91E99"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "tiab:time_in_a_bottle"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "303743CD6DF33B2A"
+					type: "custom"
+					title: "Repeatable Quest"
+					icon: "kubejs:refresh"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "Access all the items!"
+			x: 0.0d
+			y: 1.0d
+			id: "6131128D37128EC6"
+			tasks: [
+				{
+					id: "7C3A4BC9F525317F"
+					type: "item"
+					item: "refinedstorage:machine_casing"
+					count: 16L
+					consume_items: true
+				}
+				{
+					id: "39211A3EF12E48AA"
+					type: "item"
+					item: "extrastorage:neural_processor"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "5D149ED9D38B1B3C"
+					type: "item"
+					auto: "enabled"
+					item: "rsinfinitybooster:dimension_card"
+				}
+				{
+					id: "6151E571368A1688"
+					type: "custom"
+					title: "Repeatable Quest"
+					icon: "kubejs:refresh"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "Find everything!"
+			x: 2.5d
+			y: 1.0d
+			id: "12E0C2F5D451A370"
+			tasks: [{
+				id: "18145DAAFD3B350B"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "6EAEBB0046E49590"
+					type: "item"
+					item: "scannable:scanner"
+				}
+				{
+					id: "3962FECCD47EDC7A"
+					type: "custom"
+					title: "Repeatable Quest"
+					icon: "kubejs:refresh"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+	]
+}

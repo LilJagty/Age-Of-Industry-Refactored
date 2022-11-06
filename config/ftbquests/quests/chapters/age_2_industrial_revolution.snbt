@@ -1,0 +1,747 @@
+{
+	id: "71FED85D6619D293"
+	group: "5C754B3BE2DBFF8B"
+	order_index: 1
+	filename: "age_2_industrial_revolution"
+	title: "Age 2: Industrial Revolution"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Redstone Acid"
+			x: 0.0d
+			y: -3.5d
+			shape: "square"
+			subtitle: "This is useful stuff."
+			description: ["Use the Create mixer until you can afford the more efficient IE mixer."]
+			dependencies: ["2E516F9ECD2D9C63"]
+			id: "1BFDE7366521FE08"
+			tasks: [{
+				id: "7BE4D09A445F946F"
+				type: "item"
+				item: "immersiveengineering:redstone_acid_bucket"
+			}]
+			rewards: [{
+				id: "3D88BE375B14645D"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+		}
+		{
+			title: "Haunted Bricks"
+			x: -3.0d
+			y: -3.5d
+			shape: "square"
+			subtitle: "I'd recommend automating this."
+			dependencies: ["2302B3C51203B42E"]
+			id: "3EA4FE11C91BF2F2"
+			tasks: [
+				{
+					id: "4AB0238742DAE445"
+					type: "item"
+					item: "minecraft:brick"
+					count: 16L
+					consume_items: true
+				}
+				{
+					id: "7A3397F64F5F8BA0"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "558FFFBFF3F86A94"
+					type: "item"
+					item: "minecraft:soul_campfire"
+				}
+			]
+			rewards: [{
+				id: "5E3D85E9089AB151"
+				type: "item"
+				item: "minecraft:nether_brick"
+				count: 16
+			}]
+		}
+		{
+			title: "Runic Rituals"
+			x: 3.0d
+			y: -3.5d
+			shape: "square"
+			dependencies: ["7DD4D7DABB5D54FF"]
+			id: "5224A8CA63229EAF"
+			tasks: [{
+				id: "17583E485D070AAF"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [{
+				id: "45530B859BD61ECF"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+		}
+		{
+			title: "Steel"
+			x: -1.5d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["0EC1BAB6F243FC58"]
+			id: "21A0AFCCFCA2A173"
+			tasks: [{
+				id: "77D8F8538C507B36"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "7F5FA49AE937B963"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 8
+			}]
+		}
+		{
+			title: "Better Blasting"
+			x: -3.0d
+			y: 1.0d
+			subtitle: "Best steel production until endgame."
+			dependencies: ["21A0AFCCFCA2A173"]
+			optional: true
+			id: "05EBDF251BAA409C"
+			tasks: [
+				{
+					id: "7078D10C2224FB2E"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "7FF69460348156EF"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+			rewards: [{
+				id: "21D488D1C8773B2F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Refined Bricks"
+			x: -1.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "It's a surprise tool that will help us later!"
+			dependencies: [
+				"1BFDE7366521FE08"
+				"3EA4FE11C91BF2F2"
+			]
+			id: "0EC1BAB6F243FC58"
+			tasks: [{
+				id: "24890F8D1AB7EE59"
+				type: "item"
+				item: "kubejs:refined_brick"
+				count: 8L
+			}]
+			rewards: [{
+				id: "759B9AF4674F0B80"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 32
+			}]
+		}
+		{
+			title: "Mechanical Components"
+			x: 0.0d
+			y: 1.0d
+			shape: "square"
+			description: ["Check out Botania's orechid to automate the various required metals."]
+			dependencies: [
+				"21A0AFCCFCA2A173"
+				"6CF3BB50634E53E1"
+				"1A153B48FFCC563F"
+			]
+			size: 1.5d
+			id: "44070C472614FCD2"
+			tasks: [
+				{
+					id: "015D5920DCE0F2A6"
+					type: "item"
+					item: "immersiveengineering:component_iron"
+				}
+				{
+					id: "7B1B271E36F98DBF"
+					type: "item"
+					item: "immersiveengineering:component_steel"
+				}
+			]
+			rewards: [{
+				id: "6BF3C41E398AB6E4"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Component Blueprint"
+			x: 0.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "For use with the engineer's workbench."
+			dependencies: ["1BFDE7366521FE08"]
+			id: "6CF3BB50634E53E1"
+			tasks: [{
+				id: "4E3D78B4566651D2"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2BFD856395A14AB4"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Electrical Engineering"
+			x: -3.0d
+			y: 2.5d
+			shape: "square"
+			dependencies: ["5F2049F07BC45349"]
+			id: "4A575B30443FF9A7"
+			tasks: [{
+				id: "7F8A51736681736E"
+				type: "item"
+				item: "immersiveengineering:rs_engineering"
+			}]
+			rewards: [{
+				id: "6626597547C77424"
+				type: "item"
+				item: {
+					id: "immersiveengineering:wirecutter"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							lvl: 3s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			shape: "square"
+			dependencies: [
+				"44070C472614FCD2"
+				"1DD974B6F18EC756"
+			]
+			id: "5979B9CE45CE7869"
+			tasks: [{
+				id: "6DBFD4CE1822086D"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+			rewards: [{
+				id: "16768BA6C1842AEB"
+				type: "item"
+				item: "immersiveengineering:plate_steel"
+				count: 32
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			shape: "square"
+			dependencies: [
+				"44070C472614FCD2"
+				"1DD974B6F18EC756"
+			]
+			id: "77906FE3E899CB6F"
+			tasks: [{
+				id: "4E86BF66DCDB502E"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+			rewards: [{
+				id: "6461457E7D2A6AD0"
+				type: "item"
+				item: "create:iron_sheet"
+				count: 32
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.0d
+			subtitle: "Place a Presser."
+			description: ["Presses plates, rods, wires, and more with maximum efficiency."]
+			dependencies: [
+				"4A575B30443FF9A7"
+				"5979B9CE45CE7869"
+			]
+			id: "5EABD6563862348A"
+			tasks: [
+				{
+					id: "772922F658FF4009"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_metalpress"
+					criterion: ""
+				}
+				{
+					id: "125EAF60ACBC4AA9"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "55803A96E4873A91"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "22CE0D42F7AC4A2D"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "295FC547B04185A7"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "07590A8EE96459F8"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "4FF82F79BD8497A2"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "molds"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			subtitle: "Make a Mixer."
+			description: ["Generally useful machine- also mixes Redstone Acid with 2x efficiency."]
+			dependencies: [
+				"4A575B30443FF9A7"
+				"77906FE3E899CB6F"
+			]
+			id: "62BFFC32C7FBEA8C"
+			tasks: [
+				{
+					id: "276729667FC62D27"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_mixer"
+					criterion: ""
+				}
+				{
+					id: "5C52A939F489B494"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "0151C12B81B6F161"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "39D8B70C0DFA88E6"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2D4FC4DF22FAB258"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "215BE1B8C176837F"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+				}
+				{
+					id: "21FC737005E69B1B"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "24C1C60F0E6D5946"
+				type: "item"
+				item: "immersiveengineering:metal_barrel"
+				count: 2
+			}]
+		}
+		{
+			title: "Automated Assembly"
+			x: -4.5d
+			y: 5.5d
+			subtitle: "Assemble an Automated Workbench."
+			description: ["Can automate various components, namely mechanical components."]
+			dependencies: [
+				"5979B9CE45CE7869"
+				"77906FE3E899CB6F"
+				"4A575B30443FF9A7"
+			]
+			id: "22F142DAC1DC90AF"
+			tasks: [
+				{
+					id: "57F1E89F6310D4CC"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "60D31B9F26E53DCC"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "470E2008D26C67CA"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "3C4628D44C6C2C66"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "60400F23203B4E6D"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+				{
+					id: "1B9C30AEBB17BE4E"
+					type: "item"
+					item: "immersiveengineering:slab_treated_wood_horizontal"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "5F5DEB1545422147"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Crusher? I barely know her."
+			description: ["Solid ore processing, + other useful stuff."]
+			dependencies: [
+				"77906FE3E899CB6F"
+				"4A575B30443FF9A7"
+			]
+			id: "1C461C97491C2BD1"
+			tasks: [
+				{
+					id: "67864E9ADA51E675"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_crusher"
+					criterion: ""
+				}
+				{
+					id: "3D0769161FDA3890"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "36FA818AC4B47ED4"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "5E07F1194D4FEBBB"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5951F309F6FCA116"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "7EBFBAE3DD69FA3F"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+			rewards: [{
+				id: "248B7B8AEAA84F68"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			shape: "square"
+			subtitle: "Squeezer? I barely know her!"
+			dependencies: [
+				"77906FE3E899CB6F"
+				"4A575B30443FF9A7"
+			]
+			id: "6F3F48D273C7CE16"
+			tasks: [
+				{
+					id: "7E0BD650A2F3F486"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_squeezer"
+					criterion: ""
+				}
+				{
+					id: "182663150DC4B898"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "569775D7BCECF541"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+				{
+					id: "72FC0E45427CB733"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "54550533E20D308E"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2843CDA94CFE6AEA"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "6FDEF5BBE4640CB4"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+			]
+			rewards: [{
+				id: "3728B9B9B20CFDAC"
+				type: "item"
+				item: "immersiveengineering:dust_coke"
+				count: 8
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.5d
+			shape: "square"
+			subtitle: "Fermenter? I... I'll stop now."
+			dependencies: [
+				"77906FE3E899CB6F"
+				"4A575B30443FF9A7"
+			]
+			id: "46538FEA93A0533A"
+			tasks: [
+				{
+					id: "2DBD1FCF7528A660"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_fermenter"
+					criterion: ""
+				}
+				{
+					id: "6211BF80AEDF3226"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3A6CB7DF237B7B7D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "1C6F949EA62BD3C5"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "25F22B0C4514B8E6"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "50CA033D42730509"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "0DCEF34F2E26F099"
+					type: "item"
+					item: "minecraft:cauldron"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "2B0D5086857A2BFB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.0d
+			shape: "square"
+			dependencies: [
+				"6F3F48D273C7CE16"
+				"46538FEA93A0533A"
+			]
+			id: "4D7BD10986DD4EFE"
+			tasks: [{
+				id: "2187190794A09F83"
+				type: "advancement"
+				advancement: "immersiveengineering:multiblocks/mb_refinery"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7CEDB20A42886756"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.0d
+			y: 9.5d
+			shape: "square"
+			subtitle: "Best early-game power."
+			dependencies: ["4D7BD10986DD4EFE"]
+			id: "6267A095FFF95EA1"
+			tasks: [{
+				id: "7662A4E477B4FE22"
+				type: "advancement"
+				advancement: "immersiveengineering:multiblocks/mb_dieselgen"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5DAE45A7E1A4AD4B"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: -1.0d
+			y: 11.0d
+			shape: "square"
+			subtitle: "3x Ore Processing and 4x Quartz-Enriched Iron Efficiency"
+			description: ["And Netherite doubling. :)"]
+			dependencies: ["6267A095FFF95EA1"]
+			size: 2.0d
+			id: "6CDAEF46836EE43F"
+			tasks: [{
+				id: "7E546C92A9E58B72"
+				type: "advancement"
+				advancement: "immersiveengineering:multiblocks/mb_arcfurnace"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "426A56AC9AA7BF4E"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "681B530022C72CB9"
+					type: "item"
+					item: {
+						id: "immersiveengineering:graphite_electrode"
+						Count: 1b
+						tag: {
+							graphDmg: 0
+							Enchantments: [{
+								lvl: 3s
+								id: "minecraft:unbreaking"
+							}]
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			subtitle: "These machines require power to operate. Check the Energy chapter if you need guidance!"
+			id: "4680817206813BCD"
+			tasks: [{
+				id: "171F94CE0EA198CA"
+				type: "checkmark"
+				title: "Powering your Factory"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			shape: "square"
+			dependencies: ["5224A8CA63229EAF"]
+			id: "2013F46DF5493AE8"
+			tasks: [
+				{
+					id: "7D0DA5033FF864D7"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "1CF26B755E6ABB0F"
+					type: "item"
+					item: "botania:livingrock"
+					count: 5L
+				}
+				{
+					id: "21B7B7C016A973DF"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "2ED42AAD7F6FE485"
+				type: "item"
+				item: "botania:spark"
+				count: 8
+			}]
+		}
+	]
+}

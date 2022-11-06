@@ -1,0 +1,310 @@
+{
+	id: "3DAF6DD066352F1E"
+	group: "5C754B3BE2DBFF8B"
+	order_index: 4
+	filename: "age_5_dream_tech"
+	title: "Age 5: Dream Tech"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Above and Beyond!"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Blastoff!"
+			dependencies: [
+				"6895E923B5A35ACE"
+				"4682C350C75028F5"
+				"4EDE3880386CB03B"
+			]
+			id: "348DA70657535DC2"
+			tasks: [{
+				id: "4C96501BF29AD365"
+				type: "item"
+				item: {
+					id: "beyond_earth:rocket_t1"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Alien Tech"
+			x: 3.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Bring your buddy home!"
+			dependencies: ["2AEE4AFE21BD0F98"]
+			id: "46DE9CC1F62A9FE7"
+			tasks: [
+				{
+					id: "5BDDFE2FC27A2118"
+					type: "item"
+					item: "kubejs:alien_mechanism"
+				}
+				{
+					id: "04904198EA8329B9"
+					type: "item"
+					item: "kubejs:alien_processor"
+				}
+			]
+			rewards: [{
+				id: "5B5647EFDDC3B362"
+				type: "item"
+				item: "industrialforegoing:mob_imprisonment_tool"
+			}]
+		}
+		{
+			title: "Getting Mooned"
+			x: 1.5d
+			y: 1.5d
+			shape: "square"
+			dependencies: ["348DA70657535DC2"]
+			id: "2AEE4AFE21BD0F98"
+			tasks: [{
+				id: "184C983EAF702BFA"
+				type: "item"
+				item: "beyond_earth:desh_ingot"
+			}]
+		}
+		{
+			title: "Martian Madness"
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["2AEE4AFE21BD0F98"]
+			id: "2633B306A7CF4E19"
+			tasks: [{
+				id: "481283ACCA4606D5"
+				type: "item"
+				item: "beyond_earth:ostrum_ingot"
+			}]
+		}
+		{
+			title: "Mice on Venus"
+			x: -2.5d
+			y: 4.5d
+			dependencies: ["2633B306A7CF4E19"]
+			id: "1A431D66147763C8"
+			tasks: [{
+				id: "7DDFF9D55DAFC4E1"
+				type: "item"
+				item: "beyond_earth:calorite_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			shape: "square"
+			dependencies: [
+				"46DE9CC1F62A9FE7"
+				"2AEE4AFE21BD0F98"
+			]
+			id: "0CE5D1FF5791ADEE"
+			tasks: [{
+				id: "5BE2EAF1A0422B9A"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			dependencies: [
+				"2633B306A7CF4E19"
+				"0CE5D1FF5791ADEE"
+			]
+			id: "2A600D5B406E9EE6"
+			tasks: [{
+				id: "39F2E1CB7EF6BC86"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			title: "Achieving the Future"
+			x: 3.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Your studies on alien technology are starting to pay off..."
+			description: ["Mekanism is the last mod in the modpack's progression. At this point, treat this pack like a big sandbox. :)"]
+			dependencies: ["0CE5D1FF5791ADEE"]
+			id: "26A6CD471F5F0488"
+			tasks: [{
+				id: "53C07750E9155A46"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			dependencies: [
+				"1A431D66147763C8"
+				"2A600D5B406E9EE6"
+			]
+			id: "57B04B2ADCB6C959"
+			tasks: [{
+				id: "5A462AAD2F4D2136"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			title: "Creation"
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["46DE9CC1F62A9FE7"]
+			id: "1E04402B2D3B1C74"
+			tasks: [{
+				id: "4E6035B1D970D6AD"
+				type: "item"
+				item: "rftoolsdim:dimension_builder"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			subtitle: "As this is endgame, there aren't many more quest rewards. "
+			description: ["Do whatever you want!"]
+			id: "4AD5329747C7D022"
+			tasks: [{
+				id: "5FC4AA3A23898DB5"
+				type: "checkmark"
+				title: "Quest Rewards"
+			}]
+		}
+		{
+			title: "Synthesizing Components"
+			x: 1.5d
+			y: 5.0d
+			description: ["Use enriched materials to optimize infusion."]
+			dependencies: ["26A6CD471F5F0488"]
+			id: "1D8E0E7C3B63CED8"
+			tasks: [
+				{
+					id: "3C5EBDA25B51D859"
+					type: "item"
+					item: "mekanism:metallurgic_infuser"
+				}
+				{
+					id: "75B7DEB62BD7AF6F"
+					type: "item"
+					item: "mekanism:osmium_compressor"
+				}
+			]
+		}
+		{
+			title: "Component Transfer"
+			x: 2.5d
+			y: 6.0d
+			subtitle: "Move stuff around."
+			dependencies: ["26A6CD471F5F0488"]
+			id: "6D7D7D2346892130"
+			tasks: [
+				{
+					id: "598D563AA523449A"
+					type: "item"
+					item: "mekanism:basic_universal_cable"
+				}
+				{
+					id: "4381E2063626A150"
+					type: "item"
+					item: "mekanism:basic_mechanical_pipe"
+				}
+				{
+					id: "0C3E93C1CA286638"
+					type: "item"
+					item: "mekanism:basic_pressurized_tube"
+				}
+				{
+					id: "5A7FA0A1619A7F6C"
+					type: "item"
+					item: "mekanism:basic_logistical_transporter"
+				}
+			]
+		}
+		{
+			title: "Get Rich"
+			x: 3.5d
+			y: 6.0d
+			subtitle: "Do I hear 5x ore processing?"
+			description: ["You'll need more machines than this..."]
+			dependencies: ["26A6CD471F5F0488"]
+			id: "4D0E52ACBF1C1375"
+			tasks: [
+				{
+					id: "0D6BA49DA7C7727D"
+					type: "item"
+					item: "mekanism:enrichment_chamber"
+				}
+				{
+					id: "2725695180600EE7"
+					type: "item"
+					item: "mekanism:purification_chamber"
+				}
+				{
+					id: "5496A0595BFAF0DF"
+					type: "item"
+					item: "mekanism:crusher"
+				}
+				{
+					id: "3A9803BAE1E179A6"
+					type: "item"
+					item: "mekanism:energized_smelter"
+				}
+				{
+					id: "6C889DC2DFC6B968"
+					type: "item"
+					item: "mekanism:chemical_oxidizer"
+				}
+				{
+					id: "607E83ADB1FB4F5E"
+					type: "item"
+					item: "mekanism:chemical_infuser"
+				}
+				{
+					id: "488A398A6FC159BC"
+					type: "item"
+					item: "mekanism:chemical_injection_chamber"
+				}
+				{
+					id: "7E629AD1DFBA76AB"
+					type: "item"
+					item: "mekanism:chemical_dissolution_chamber"
+				}
+			]
+		}
+		{
+			title: "Dream Tech"
+			x: 4.5d
+			y: 5.0d
+			subtitle: "There's always a bigger fish..."
+			description: ["Mekanism includes all kinds of setups, including fission and fusion reactors. Excellent guides for them exist online. Continue at your own risk..."]
+			dependencies: ["26A6CD471F5F0488"]
+			id: "00E3EC76509845E0"
+			tasks: [
+				{
+					id: "7D6464DAA7CB94CB"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+				}
+				{
+					id: "4581F8E9A28CAAF4"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+				}
+				{
+					id: "31F52DAAAA46FDFB"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+				}
+			]
+			rewards: [{
+				id: "1CEDBC6497AD483C"
+				type: "xp_levels"
+				xp_levels: 100
+			}]
+		}
+	]
+}
