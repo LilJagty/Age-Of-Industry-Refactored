@@ -31,17 +31,17 @@ onEvent('recipes', event => {
 	orechid("stone", "immersiveengineering:ore_nickel", 20000);
 
 	//deepslate orechid recipes
-	orechid("deepslate", "deepslate_copper_ore", 25);
-	orechid("deepslate", "deepslate_iron_ore", 175);
+	//orechid("deepslate", "deepslate_copper_ore", 25);
+	orechid("deepslate", "deepslate_iron_ore", 125);
 	orechid("deepslate", "deepslate_gold_ore", 125);
-	orechid("deepslate", "deepslate_redstone_ore", 150);
-	orechid("deepslate", "deepslate_lapis_ore", 100);
+	orechid("deepslate", "deepslate_redstone_ore", 75);
+	orechid("deepslate", "deepslate_lapis_ore", 10);
 	orechid("deepslate", "deepslate_diamond_ore", 100);
-	orechid("deepslate", "deepslate_emerald_ore", 25);
-	orechid("deepslate", "immersiveengineering:deepslate_ore_lead", 60);
-	orechid("deepslate", "immersiveengineering:deepslate_ore_silver", 50);
-	orechid("deepslate", "immersiveengineering:deepslate_ore_nickel", 25);
-	orechid("deepslate", "immersiveengineering:deepslate_ore_uranium", 60);
+	//orechid("deepslate", "deepslate_emerald_ore", 25);
+	orechid("deepslate", "immersiveengineering:deepslate_ore_lead", 175);
+	orechid("deepslate", "immersiveengineering:deepslate_ore_silver", 175);
+	//orechid("deepslate", "immersiveengineering:deepslate_ore_nickel", 25);
+	orechid("deepslate", "immersiveengineering:deepslate_ore_uranium", 175);
 
 	//moon orechid recipes
 	orechid("beyond_earth:moon_stone", "beyond_earth:moon_cheese_ore", 1);
