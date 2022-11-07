@@ -693,5 +693,28 @@
 				xp_levels: 10
 			}]
 		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["This innocent flower is extremely useful, and includes a method of automating deepslate in this pack."]
+			id: "0189D10AED640E6E"
+			tasks: [
+				{
+					id: "457EA5AE5A96826B"
+					type: "item"
+					item: "botania:pure_daisy"
+				}
+				{
+					id: "399E4B792489E94B"
+					type: "item"
+					item: "minecraft:stone"
+				}
+			]
+			rewards: [{
+				id: "5B0AC4B46B325B89"
+				type: "item"
+				item: "minecraft:deepslate"
+			}]
+		}
 	]
 }
