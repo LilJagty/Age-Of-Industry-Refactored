@@ -38,10 +38,10 @@ onEvent('recipes', event => {
 	orechid("deepslate", "deepslate_lapis_ore", 10);
 	orechid("deepslate", "deepslate_diamond_ore", 100);
 	//orechid("deepslate", "deepslate_emerald_ore", 25);
-	orechid("deepslate", "immersiveengineering:deepslate_ore_lead", 175);
+	orechid("deepslate", "mekanism:deepslate_lead_ore", 175);
 	orechid("deepslate", "immersiveengineering:deepslate_ore_silver", 175);
 	//orechid("deepslate", "immersiveengineering:deepslate_ore_nickel", 25);
-	orechid("deepslate", "immersiveengineering:deepslate_ore_uranium", 175);
+	orechid("deepslate", "mekanism:deepslate_uranium_ore", 175);
 
 	//moon orechid recipes
 	orechid("beyond_earth:moon_stone", "beyond_earth:moon_cheese_ore", 1);
