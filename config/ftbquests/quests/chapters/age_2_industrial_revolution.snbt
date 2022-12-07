@@ -625,6 +625,7 @@
 			x: -1.0d
 			y: 8.0d
 			shape: "square"
+			subtitle: "Refiner."
 			dependencies: [
 				"6F3F48D273C7CE16"
 				"46538FEA93A0533A"
@@ -647,6 +648,7 @@
 			y: 9.5d
 			shape: "square"
 			subtitle: "Best early-game power."
+			description: ["Diesel Generator OP. Check out the \"Oil Processing\" section of the Engineer's Manual for explanations on how to obtain and refine Oil for power burning or vehicles."]
 			dependencies: ["4D7BD10986DD4EFE"]
 			id: "6267A095FFF95EA1"
 			tasks: [{
@@ -665,8 +667,8 @@
 			x: -1.0d
 			y: 11.0d
 			shape: "square"
-			subtitle: "3x Ore Processing and 4x Quartz-Enriched Iron Efficiency"
-			description: ["And Netherite doubling. :)"]
+			subtitle: "The Arc Furnace"
+			description: ["3x Ore Processing and 4x Quartz-Enriched Iron Efficiency. And Netherite doubling. :)"]
 			dependencies: ["6267A095FFF95EA1"]
 			size: 2.0d
 			id: "6CDAEF46836EE43F"
@@ -701,9 +703,10 @@
 			]
 		}
 		{
-			x: -1.0d
-			y: 6.0d
+			x: -1.5d
+			y: 6.5d
 			subtitle: "These machines require power to operate. Check the Energy chapter if you need guidance!"
+			optional: true
 			id: "4680817206813BCD"
 			tasks: [{
 				id: "171F94CE0EA198CA"
@@ -715,6 +718,7 @@
 			x: 3.0d
 			y: -2.0d
 			shape: "square"
+			description: ["If you're confused, consult the Lexica Botanica."]
 			dependencies: ["5224A8CA63229EAF"]
 			id: "2013F46DF5493AE8"
 			tasks: [
@@ -741,6 +745,48 @@
 				type: "item"
 				item: "botania:spark"
 				count: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.5d
+			subtitle: "This guy helps you construct the multiblocks. It's worth it :D"
+			optional: true
+			id: "13F4D7106B0F427E"
+			tasks: [{
+				id: "62B562733832C253"
+				type: "item"
+				item: "immersivepetroleum:projector"
+			}]
+			rewards: [{
+				id: "1BD25B0E316842CE"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			subtitle: "Check out Corail's Woodcutter."
+			description: ["Make a woodcutter and/or a chainsaw. Thank me later."]
+			dependencies: ["21A0AFCCFCA2A173"]
+			optional: true
+			id: "13E606E68045EC48"
+			tasks: [{
+				id: "79F89C35230819D1"
+				type: "item"
+				item: {
+					id: "immersiveengineering:sawblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "62A67784B79EC38C"
+				type: "xp_levels"
+				xp_levels: 1
 			}]
 		}
 	]

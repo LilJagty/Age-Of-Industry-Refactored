@@ -25,7 +25,7 @@
 			width: 1.0d
 			height: 1.0d
 			rotation: 0.0d
-			image: "minecraft:textures/block/bookshelf.png"
+			image: "minecraft:textures/block/barrel_side.png"
 			hover: ["Stationary Storage"]
 			click: ""
 			dev: false
@@ -105,6 +105,7 @@
 			x: 1.5d
 			y: 1.0d
 			subtitle: "Bulk storage and auto-sorting"
+			description: ["Framed versions of these are available. Customize to your liking!"]
 			id: "5A9B690CF01BECC2"
 			tasks: [
 				{
@@ -243,6 +244,21 @@
 				id: "7B0A4D9BE69C1444"
 				type: "xp_levels"
 				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			id: "1C84067C442B3365"
+			tasks: [{
+				id: "605EB651A446B6F8"
+				type: "item"
+				item: "mekanism:personal_chest"
+			}]
+			rewards: [{
+				id: "2017BAEA9E6FEEEE"
+				type: "xp_levels"
+				xp_levels: 3
 			}]
 		}
 	]

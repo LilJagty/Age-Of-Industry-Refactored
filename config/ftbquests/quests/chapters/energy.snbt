@@ -178,6 +178,7 @@
 			x: 0.5d
 			y: 0.5d
 			subtitle: "See in age 2."
+			description: ["The Diesel Generator can use biofuel created from the Refinery, or can use Immersive Petroleum oil products."]
 			id: "331EE80B4FE2784C"
 			tasks: [{
 				id: "0BE861BC65330F7B"

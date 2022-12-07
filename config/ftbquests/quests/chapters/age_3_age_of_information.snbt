@@ -278,6 +278,7 @@
 			]
 		}
 		{
+			title: "Automatic Crafting"
 			x: -2.0d
 			y: 4.5d
 			subtitle: "Biggest time-saver in the pack."
@@ -294,7 +295,8 @@
 				id: "28D556B31E0D06FC"
 				type: "item"
 				item: "refinedstorage:advanced_processor"
-				count: 8
+				count: 4
+				only_one: true
 			}]
 		}
 		{

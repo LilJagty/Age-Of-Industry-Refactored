@@ -14,10 +14,12 @@ onEvent('jei.hide.items', event => {
 	event.hide('waystones:bound_scroll');
 	event.hide('waystones:warp_scroll');
 
-	// IE / Create compat
+	// Rods & Plates
 	event.hide('immersiveengineering:plate_copper');
 	event.hide('immersiveengineering:plate_iron');
 	event.hide('immersiveengineering:plate_gold');
+    event.hide('immersiveengineering:plate_uranium');
+    event.hide('beyond_earth:iron_stick');
 
 	// Quark bloat
 	event.hide(/quark:.*stool/);
@@ -26,14 +28,17 @@ onEvent('jei.hide.items', event => {
 	// Refined Storage color variants
 	event.hide(/(refinedstorage):(white|light_gray|gray|black|brown|red|orange|yellow|lime|green|cyan|blue|magenta|pink)_.*/);
 
-	// IE Extras
-	event.hide('immersiveengineering:plate_uranium');
-
 	// Dummy items
 	event.hide('kubejs:dummy_fluid_item');
+    event.hide('kubejs:magical_mechanism');
 
 	// Duplicates
 	event.hide('buzzier_bees:honey_apple');
+
+    // Inaccesible Content
+    event.hide('delightful:enderite_knife');
+    event.hide('delightful:invar_knife');
+    event.hide('delightful:black_opal_knife');
 
 	// More Mekanism Processing tweaks
     let trashMats = [

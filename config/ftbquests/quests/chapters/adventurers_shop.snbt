@@ -294,5 +294,33 @@
 				}
 			]
 		}
+		{
+			x: -2.5d
+			y: 3.0d
+			subtitle: "You're welcome."
+			id: "5B07A0CF3253AF5B"
+			tasks: [
+				{
+					id: "3AAC47DABA971414"
+					type: "item"
+					item: "waterstrainer:worm"
+					count: 128L
+				}
+				{
+					id: "7AFCB5C1ECE0E825"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:infinity"
+							}]
+						}
+					}
+				}
+			]
+		}
 	]
 }

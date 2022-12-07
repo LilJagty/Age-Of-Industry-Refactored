@@ -158,7 +158,7 @@
 		{
 			title: "Replace blocks instantly"
 			x: -5.0d
-			y: 1.0d
+			y: 2.0d
 			id: "55367E85A963614D"
 			tasks: [{
 				id: "5A52DA784E7817B6"
@@ -174,7 +174,7 @@
 		{
 			title: "Place blocks in patterns"
 			x: -5.0d
-			y: -1.0d
+			y: 0.0d
 			id: "0C0DCB720B55737B"
 			tasks: [{
 				id: "40C9D0BE27892450"
@@ -245,7 +245,7 @@
 		{
 			title: "Attract nearby items"
 			x: -5.0d
-			y: 0.0d
+			y: 1.0d
 			id: "0C99D55D2BA9F965"
 			tasks: [{
 				id: "7B7FD0173A67D27D"
@@ -261,7 +261,7 @@
 		{
 			title: "Interact with the world from farther away"
 			x: -5.0d
-			y: 2.0d
+			y: 3.0d
 			id: "033F24789002C8BA"
 			tasks: [
 				{
@@ -325,7 +325,7 @@
 		{
 			title: "Bend the world to your will"
 			x: -5.0d
-			y: 3.0d
+			y: 4.0d
 			id: "75F862C9BB0C71EB"
 			tasks: [{
 				id: "420674FFD00D6351"
@@ -714,6 +714,41 @@
 				id: "5B0AC4B46B325B89"
 				type: "item"
 				item: "minecraft:deepslate"
+			}]
+		}
+		{
+			title: "Replicate buildings or use schematics"
+			x: -5.0d
+			y: -1.0d
+			description: ["Schematics can be created with the Schematic and Quill. In this pack, some useful schematics are already included. Feed it gunpowder and materials, and it will build for you."]
+			id: "14FEE3D7CED8682A"
+			tasks: [
+				{
+					id: "7F1841BA232CA45D"
+					type: "item"
+					item: "create:schematicannon"
+				}
+				{
+					id: "61CD6E21832841E3"
+					type: "item"
+					item: "create:schematic_table"
+				}
+				{
+					id: "6E173D3149CB03F3"
+					type: "item"
+					item: "create:empty_schematic"
+				}
+				{
+					id: "06CA11C8E486D64E"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 5L
+				}
+			]
+			rewards: [{
+				id: "0296316D7A715E37"
+				type: "xp_levels"
+				xp_levels: 2
 			}]
 		}
 	]

@@ -15,6 +15,9 @@ onEvent('item.tags', event => {
     keepMats.forEach(mat => {
         event.get('forge:ingots/' + mat).remove('moremekanismprocessing:' + mat + '_ingot');
     });
+
+    // Allow alternate steel plate
+    event.get('forge:plates/steel').add('create:sturdy_sheet');
 })
 
 // Add Doggy Talents dogs to FD Dog Food
@@ -155,6 +158,18 @@ onEvent('recipes', event => {
     // Chunk loader recipes
     event.replaceInput({id: 'chunkloaders:advanced_chunk_loader'}, '#forge:ingots/gold', '#forge:storage_blocks/gold');
     event.replaceInput({id: 'chunkloaders:advanced_chunk_loader'}, 'minecraft:blaze_powder', 'minecraft:blaze_rod');
+
+    // Matrix enchanting
+    event.shaped('quark:matrix_enchanter', [
+        ' B ',
+        'DRD',
+        'OOO'
+        ], {
+        B: 'minecraft:book',
+        R: 'botania:red_petal_block',
+        D: '#forge:gems/diamond',
+        O: '#forge:obsidian'
+    });
 
     // Water strainer recipes
     event.replaceInput({id: 'waterstrainer:strainer_base'}, '#forge:chests/wooden', 'create:andesite_casing');
@@ -321,6 +336,11 @@ onEvent('recipes', event => {
   event.remove({output: 'buzzier_bees:glazed_porkchop'});
   event.recipes.createFilling('buzzier_bees:glazed_porkchop', [
     'minecraft:cooked_porkchop',
+    Fluid.of('create:honey', 250)
+  ]);
+  event.remove({output: 'delightful:honey_glazed_walnut'});
+  event.recipes.createFilling('delightful:honey_glazed_walnut', [
+    'ecologics:walnut',
     Fluid.of('create:honey', 250)
   ]);
 

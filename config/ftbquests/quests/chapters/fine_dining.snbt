@@ -146,12 +146,24 @@
 				id: "1AE2746C597C7A46"
 				type: "item"
 				item: "minecraft:enchanted_golden_apple"
+				consume_items: true
 			}]
-			rewards: [{
-				id: "198E49BE09B0EC0B"
-				type: "item"
-				item: "create:creative_blaze_cake"
-			}]
+			rewards: [
+				{
+					id: "198E49BE09B0EC0B"
+					type: "item"
+					auto: "no_toast"
+					item: "create:creative_blaze_cake"
+				}
+				{
+					id: "5C074DECF911368D"
+					type: "custom"
+					title: "Repeatable Quest"
+					icon: "kubejs:refresh"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
 		}
 		{
 			title: "Meatlovers"
