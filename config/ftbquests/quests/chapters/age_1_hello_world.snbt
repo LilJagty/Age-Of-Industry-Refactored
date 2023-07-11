@@ -4,7 +4,7 @@
 	order_index: 0
 	filename: "age_1_hello_world"
 	title: "Age 1: Age of Invention"
-  icon: "create:goggles"
+	icon: "create:goggles"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -635,4 +635,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

@@ -4,7 +4,7 @@
 	order_index: 1
 	filename: "adventurers_shop"
 	title: "Adventurer's Shop"
-  icon: {
+	icon: {
 		id: "naturescompass:naturescompass"
 		Count: 1b
 		tag: { }
@@ -300,6 +300,7 @@
 			]
 		}
 		{
+			title: "Catch everything!"
 			x: -2.5d
 			y: 3.0d
 			subtitle: "You're welcome."
@@ -326,6 +327,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "43EFBC8B1D16454B"
+				type: "item"
+				item: "waterstrainer:super_worm"
+			}]
 		}
 	]
+	quest_links: [ ]
 }
