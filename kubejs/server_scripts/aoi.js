@@ -18,6 +18,14 @@ onEvent('item.tags', event => {
 
     // Allow alternate steel plate
     event.get('forge:plates/steel').add('create:sturdy_sheet');
+
+    // Crab meat unification
+    event.add('forge:raw_crab').add('ecologics:crab_meat');
+    event.add('forge:raw_crab').add('quark:crab_leg');
+
+    // Andesite alloy nugget tag
+    event.add('create:andesite_nugget').add('#forge:nuggets/iron');
+    event.add('create:andesite_nugget').add('#forge:nuggets/zinc');
 })
 
 // Add Doggy Talents dogs to FD Dog Food

@@ -4,6 +4,7 @@
 	order_index: 4
 	filename: "age_5_dream_tech"
 	title: "Age 5: Dream Tech"
+  icon: "mekanism:digital_miner"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

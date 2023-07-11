@@ -4,6 +4,15 @@
 	order_index: 2
 	filename: "transport"
 	title: "Transport"
+  icon: {
+		id: "simpleplanes:plane"
+		Count: 1b
+		tag: {
+			EntityTag: {
+				material: "minecraft:oak_planks"
+			}
+		}
+	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [

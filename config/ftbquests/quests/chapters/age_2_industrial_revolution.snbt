@@ -4,6 +4,7 @@
 	order_index: 1
 	filename: "age_2_industrial_revolution"
 	title: "Age 2: Industrial Revolution"
+  icon: "immersiveengineering:component_steel"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

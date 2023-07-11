@@ -4,6 +4,7 @@
 	order_index: 0
 	filename: "age_1_hello_world"
 	title: "Age 1: Age of Invention"
+  icon: "create:goggles"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -46,7 +47,14 @@
 				{
 					id: "3C352E2875AD6E00"
 					type: "item"
-					item: "create:zinc_nugget"
+					title: "Any #create:andesite_nugget"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "create:andesite_nugget"
+						}
+					}
 				}
 				{
 					id: "33676C6A50ADFF9C"

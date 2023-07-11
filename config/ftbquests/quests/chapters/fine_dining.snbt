@@ -4,6 +4,7 @@
 	order_index: 0
 	filename: "fine_dining"
 	title: "Fine Dining"
+  icon: "create:honeyed_apple"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -200,7 +201,14 @@
 				{
 					id: "316C6C855CD43E7A"
 					type: "item"
-					item: "quark:crab_leg"
+					title: "Any #forge:raw_crab"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:raw_crab"
+						}
+					}
 				}
 				{
 					id: "539F61F6353E1730"
